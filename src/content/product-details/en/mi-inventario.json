@@ -1,0 +1,160 @@
+{
+  "slug": "mi-inventario",
+  "seo": {
+    "title": "Mi Inventario — Inventory Software | Resoria",
+    "description": "Discover Mi Inventario: stock control, alerts and reports. Screenshots, tutorials and success stories."
+  },
+  "heroGif": "https://media.giphy.com/media/26BRuo6sLetdllPAQ/giphy.gif",
+  "backLabel": "Back to products",
+  "whatIs": {
+    "title": "What is Mi Inventario?",
+    "paragraphs": [
+      "Mi Inventario is a system to control stock in your store, warehouse, hardware shop or pharmacy with precision.",
+      "Track stock in and out, get low-stock alerts and generate reports to know what to restock and when. Works locally or in the cloud depending on your plan."
+    ]
+  },
+  "whoIsItFor": {
+    "title": "Who is it for?",
+    "headlinePrefix": "System for your",
+    "typewriterWords": ["Hardware store", "Pharmacy", "Grocery store", "Shop", "Warehouse", "Supermarket", "Distributor"],
+    "subtitle": "If you buy and sell products and need precise stock control, Mi Inventario is your solution."
+  },
+  "benefits": {
+    "title": "How can it benefit you?",
+    "items": [
+      {
+        "title": "Always up-to-date stock",
+        "description": "Every stock in and out is recorded. You know exactly how much you have of each product.",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&auto=format&fit=crop",
+        "imageAlt": "Warehouse shelves with organized products"
+      },
+      {
+        "title": "Avoid stockouts",
+        "description": "Automatic alerts when a product is running low so you restock on time.",
+        "image": "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=600&auto=format&fit=crop",
+        "imageAlt": "Store shelf with few products remaining"
+      },
+      {
+        "title": "Less loss and shrinkage",
+        "description": "Spot discrepancies, slow movers and excess stock before they cost you money.",
+        "image": "https://images.unsplash.com/photo-1578574577316-4bf89dbc7d88?w=600&auto=format&fit=crop",
+        "imageAlt": "Worker checking inventory in a warehouse"
+      },
+      {
+        "title": "Reports to decide",
+        "description": "Check movements, inventory value and best sellers in seconds.",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop",
+        "imageAlt": "Dashboard with business reports and statistics"
+      },
+      {
+        "title": "Save operational time",
+        "description": "Forget spreadsheets and manual counts that eat hours every week.",
+        "image": "https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&auto=format&fit=crop",
+        "imageAlt": "Worker scanning products in a warehouse"
+      },
+      {
+        "title": "Multi-location ready",
+        "description": "Manage multiple stores or warehouses from one centralized system.",
+        "image": "https://images.unsplash.com/photo-1566576721346-5663859dce93?w=600&auto=format&fit=crop",
+        "imageAlt": "Logistics hub with multiple storage locations"
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "How does it work?",
+    "steps": [
+      {
+        "title": "1. Register products",
+        "description": "Load your catalog with codes, categories, prices and minimum stock levels.",
+        "image": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?w=600&auto=format&fit=crop",
+        "imageAlt": "Products organized on store shelves"
+      },
+      {
+        "title": "2. Stock in and out",
+        "description": "Record purchases, sales and adjustments. Stock updates automatically.",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&auto=format&fit=crop",
+        "imageAlt": "Goods moving in and out of a warehouse"
+      },
+      {
+        "title": "3. Smart alerts",
+        "description": "Get notified when a product is running low or exceeds ideal stock.",
+        "image": "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=600&auto=format&fit=crop",
+        "imageAlt": "Shelf with few products indicating low stock"
+      },
+      {
+        "title": "4. Reports and decisions",
+        "description": "Analyze movements, best sellers and total inventory value.",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop",
+        "imageAlt": "Dashboard with inventory and sales reports"
+      }
+    ]
+  },
+  "screenshots": {
+    "title": "Screenshots",
+    "items": [
+      {
+        "src": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&auto=format&fit=crop",
+        "alt": "Warehouse view in Mi Inventario",
+        "caption": "Product list in stock"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1553413077-190dd305871c?w=900&auto=format&fit=crop",
+        "alt": "Inventory reports in Mi Inventario",
+        "caption": "Monthly movements and reports"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?w=900&auto=format&fit=crop",
+        "alt": "Low stock alerts in Mi Inventario",
+        "caption": "Automatic restock alerts"
+      }
+    ]
+  },
+  "tutorials": {
+    "title": "Tutorials",
+    "items": [
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Setting up your initial inventory",
+        "duration": "7 min"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Stock in, out and adjustments",
+        "duration": "6 min"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Reports and stock alerts",
+        "duration": "5 min"
+      }
+    ]
+  },
+  "successStories": {
+    "title": "Success stories",
+    "items": [
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "quote": "We now know exactly what to restock every week. No more surprise stockouts.",
+        "author": "Carlos Ríos",
+        "business": "El Ahorro Store"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "quote": "Stock control in our hardware store improved a lot. Reports save us hours every month.",
+        "author": "Ana Lucía",
+        "business": "El Tornillo Hardware"
+      }
+    ]
+  },
+  "pricingSection": {
+    "title": "Available offers",
+    "subtitle": "Choose the plan that best fits your business.",
+    "contactCta": "Contact to purchase"
+  },
+  "cta": {
+    "trial": "Free 15-day trial",
+    "pricing": "View pricing",
+    "downloadLabel": "Download",
+    "downloadSublabel": "Free"
+  }
+}

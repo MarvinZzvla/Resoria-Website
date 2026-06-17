@@ -1,0 +1,228 @@
+{
+  "lang": "es",
+  "locale": "es",
+  "alternateLocale": "en",
+  "seo": {
+    "title": "Resoria — Software para restaurantes e inventarios | Easy Restaurant & Mi Inventario",
+    "description": "Resoria crea software simple para restaurantes e inventarios. Elige licencia de por vida o suscripción SaaS. Easy Restaurant y Mi Inventario.",
+    "ogImageAlt": "Resoria Software Solutions — Easy Restaurant y Mi Inventario"
+  },
+  "nav": {
+    "products": "Productos",
+    "licenses": "Licencias",
+    "success": "Casos de éxito",
+    "contact": "Comprar",
+    "langSwitch": "EN"
+  },
+  "hero": {
+    "headlinePrefix": "Sistema para tu",
+    "typewriterWords": ["Negocio","Restaurante", "Cafetería", "Ferretería", "Farmacia"],
+    "subheadline": "Resoria es una empresa de software que simplifica la gestión de tu negocio.",
+    "cta": "Ver productos y precios",
+    "logoAlt": "Resoria Software Solutions"
+  },
+  "productsSection": {
+    "id": "productos",
+    "title": "Nuestros productos y precios",
+    "subtitle": "Elige el software que necesitas y la modalidad que mejor se adapte a tu negocio.",
+    "trialCta": "Prueba gratis por 15 días",
+    "learnMoreCta": "Conocer más"
+  },
+  "products": [
+    {
+      "id": "easy-restaurant",
+      "name": "Easy Restaurant",
+      "tagline": "Gestión de restaurante sin complicaciones",
+      "description": "Controla mesas, pedidos, cocina y caja desde un solo sistema. Ideal para restaurantes, cafeterías y food trucks.",
+      "logo": "/logos/easy-restaurant-transparent.png",
+      "logoAlt": "Logo de Easy Restaurant — software para restaurantes",
+      "accent": "orange",
+      "downloadUrl": "#",
+      "plans": [
+        {
+          "id": "lifetime",
+          "name": "Licencia de por vida",
+          "price": "$299",
+          "period": "pago único USD",
+          "features": [
+            "Instalación en tu equipo",
+            "Sin límite de usuarios",
+            "Actualizaciones incluidas 1 año",
+            "Soporte por correo"
+          ]
+        },
+        {
+          "id": "saas",
+          "name": "SaaS mensual",
+          "price": "$29",
+          "period": "USD / mes",
+          "popular": true,
+          "features": [
+            "Acceso desde cualquier dispositivo",
+            "Actualizaciones automáticas",
+            "Copias de seguridad en la nube",
+            "Soporte prioritario"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mi-inventario",
+      "name": "Mi Inventario",
+      "tagline": "Control total de tu stock",
+      "description": "Administra productos, entradas, salidas y alertas de stock bajo. Perfecto para tiendas, bodegas y almacenes.",
+      "logo": "/logos/mi-inventario-pro.png",
+      "logoAlt": "Logo de Mi Inventario — software de inventario",
+      "accent": "emerald",
+      "downloadUrl": "#",
+      "plans": [
+        {
+          "id": "lifetime",
+          "name": "Licencia de por vida",
+          "price": "$249",
+          "period": "pago único USD",
+          "features": [
+            "Instalación en tu equipo",
+            "Productos ilimitados",
+            "Reportes de inventario",
+            "Soporte por correo"
+          ]
+        },
+        {
+          "id": "saas",
+          "name": "SaaS mensual",
+          "price": "$24",
+          "period": "USD / mes",
+          "popular": true,
+          "features": [
+            "Acceso multi-dispositivo",
+            "Sincronización en tiempo real",
+            "Alertas automáticas de stock",
+            "Soporte prioritario"
+          ]
+        }
+      ]
+    }
+  ],
+  "compareSection": {
+    "id": "licencias",
+    "title": "¿Licencia de por vida o SaaS?",
+    "subtitle": "Compara las dos modalidades y elige la que mejor se adapte a tu negocio.",
+    "lifetimeLabel": "Por vida",
+    "saasLabel": "SaaS",
+    "rows": [
+      {
+        "aspect": "Pago",
+        "lifetime": "Un solo pago, tuyo para siempre",
+        "saas": "Pago mensual, cancela cuando quieras"
+      },
+      {
+        "aspect": "Ideal para",
+        "lifetime": "Negocios que prefieren costo fijo a largo plazo",
+        "saas": "Empezar con poco presupuesto"
+      },
+      {
+        "aspect": "Actualizaciones",
+        "lifetime": "Incluidas el primer año",
+        "saas": "Siempre incluidas automáticamente"
+      },
+      {
+        "aspect": "Acceso",
+        "lifetime": "Instalación local en tu equipo",
+        "saas": "Desde cualquier dispositivo con internet"
+      }
+    ]
+  },
+  "successSection": {
+    "id": "casos-exito",
+    "title": "Casos de éxito",
+    "subtitle": "Negocios que ya confían en el software de Resoria.",
+    "stories": [
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Restaurante La Esquina",
+        "quote": "Con Easy Restaurant redujimos los errores en pedidos y el servicio es mucho más rápido.",
+        "author": "María G., dueña de restaurante"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Bodega El Ahorro",
+        "quote": "Mi Inventario nos ayudó a saber exactamente qué productos reponer cada semana.",
+        "author": "Carlos R., gerente de tienda"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Café Central",
+        "quote": "La modalidad SaaS nos permitió empezar sin una inversión grande. Muy recomendado.",
+        "author": "Ana L., emprendedora"
+      }
+    ]
+  },
+  "contactSection": {
+    "id": "contacto",
+    "title": "¿Cómo comprar?",
+    "subtitle": "Tres pasos simples para obtener tu licencia.",
+    "steps": [
+      {
+        "title": "1. Elige",
+        "description": "Selecciona el producto y la modalidad (por vida o SaaS) que prefieras."
+      },
+      {
+        "title": "2. Contáctanos",
+        "description": "Completa el formulario o escríbenos directamente. Te respondemos en menos de 24 horas."
+      },
+      {
+        "title": "3. Paga",
+        "description": "Realiza el pago por PayPal, transferencia bancaria o efectivo. Activamos tu licencia al confirmar."
+      }
+    ],
+    "form": {
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "product": "Producto",
+      "plan": "Modalidad",
+      "message": "Mensaje (opcional)",
+      "submit": "Enviar solicitud",
+      "productOptions": [
+        { "value": "", "label": "Selecciona un producto" },
+        { "value": "easy-restaurant", "label": "Easy Restaurant" },
+        { "value": "mi-inventario", "label": "Mi Inventario" }
+      ],
+      "planOptions": [
+        { "value": "", "label": "Selecciona modalidad" },
+        { "value": "lifetime", "label": "Licencia de por vida" },
+        { "value": "saas", "label": "SaaS mensual" }
+      ]
+    },
+    "contactInfo": {
+      "email": "ventas@resoria.com",
+      "phone": "+1 (000) 000-0000",
+      "whatsapp": "+1 (000) 000-0000"
+    },
+    "paymentTitle": "Métodos de pago aceptados",
+    "paymentMethods": [
+      {
+        "id": "paypal",
+        "name": "PayPal",
+        "description": "Pago seguro con tu cuenta PayPal. Te enviamos el enlace al confirmar tu pedido."
+      },
+      {
+        "id": "transfer",
+        "name": "Transferencia bancaria",
+        "description": "Transferencia directa a nuestra cuenta. Te enviamos los datos bancarios por correo."
+      },
+      {
+        "id": "cash",
+        "name": "Efectivo",
+        "description": "Pago en efectivo disponible según tu ubicación. Consúltanos para coordinar."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Software Solutions — Easy Restaurant & Mi Inventario",
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Privacidad",
+    "terms": "Términos"
+  }
+}

@@ -1,0 +1,41 @@
+---
+import type { SiteContent } from '../types/content';
+
+interface Props {
+  content: SiteContent;
+}
+
+const { content } = Astro.props;
+const { compareSection } = content;
+---
+
+<section id={compareSection.id} class="py-12 md:py-14" aria-labelledby="compare-heading">
+  <div class="mx-auto w-[min(1120px,92vw)]">
+    <header class="mb-8 text-center" data-animate>
+      <h2 id="compare-heading" class="mb-3 text-3xl font-bold md:text-4xl">{compareSection.title}</h2>
+      <p class="mx-auto max-w-xl text-resoria-muted">{compareSection.subtitle}</p>
+    </header>
+
+    <div class="overflow-x-auto rounded-xl border border-white/10" data-animate>
+      <table class="w-full min-w-[520px] border-collapse bg-resoria-card">
+        <caption class="sr-only">{compareSection.title}</caption>
+        <thead>
+          <tr class="border-b border-white/10 bg-resoria-elevated">
+            <th scope="col" class="p-4 text-left"></th>
+            <th scope="col" class="p-4 text-left font-semibold">{compareSection.lifetimeLabel}</th>
+            <th scope="col" class="p-4 text-left font-semibold">{compareSection.saasLabel}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {compareSection.rows.map((row) => (
+            <tr class="border-b border-white/10 last:border-b-0">
+              <th scope="row" class="w-1/4 p-4 text-left font-medium text-resoria-silver">{row.aspect}</th>
+              <td class="p-4 text-sm text-resoria-muted">{row.lifetime}</td>
+              <td class="p-4 text-sm text-resoria-muted">{row.saas}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

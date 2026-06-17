@@ -1,0 +1,46 @@
+---
+import type { SiteContent } from '../types/content';
+import type { LegalDocument } from '../types/legal';
+
+interface Props {
+  content: SiteContent;
+  document: LegalDocument;
+}
+
+const { content, document } = Astro.props;
+const homePath = `/${content.locale}/`;
+const backLabel = content.locale === 'en' ? 'Back to home' : 'Volver al inicio';
+---
+
+<article class="py-10 md:py-14">
+  <div class="mx-auto w-[min(720px,92vw)]">
+    <a
+      href={homePath}
+      class="mb-6 inline-flex items-center gap-2 text-sm text-resoria-muted transition-colors hover:text-resoria-blue"
+    >
+      <span aria-hidden="true">←</span> {backLabel}
+    </a>
+
+    <header class="mb-8 border-b border-white/10 pb-6">
+      <h1 class="mb-2 text-2xl font-bold md:text-3xl">{document.title}</h1>
+      <p class="text-sm text-resoria-dim">{document.lastUpdated}</p>
+    </header>
+
+    <div class="space-y-8 text-resoria-muted leading-relaxed">
+      <p class="text-base">{document.intro}</p>
+
+      {document.sections.map((section) => (
+        <section>
+          <h2 class="mb-3 text-lg font-semibold text-[#f0f0f5]">{section.title}</h2>
+          <div class="space-y-3 text-sm sm:text-base">
+            {section.paragraphs.map((paragraph) => (
+              <p>{paragraph}</p>
+            ))}
+          </div>
+        </section>
+      ))}
+
+      <p class="border-t border-white/10 pt-6 text-sm">{document.contactNote}</p>
+    </div>
+  </div>
+</article>

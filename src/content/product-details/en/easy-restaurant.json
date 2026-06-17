@@ -1,0 +1,160 @@
+{
+  "slug": "easy-restaurant",
+  "seo": {
+    "title": "Easy Restaurant — Restaurant Software | Resoria",
+    "description": "Discover Easy Restaurant: tables, orders, kitchen and POS management. Screenshots, tutorials and success stories."
+  },
+  "heroGif": "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjJyNWZ4MnU1bjZ3ZDRzcnNtYzE0M3FqMWRnZmdkcGM1ZG1vd21udCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wRLi2I7Hgyds1YaEkA/giphy.gif",
+  "backLabel": "Back to products",
+  "whatIs": {
+    "title": "What is Easy Restaurant?",
+    "paragraphs": [
+      "Easy Restaurant is a complete system to manage your restaurant, café or food truck from one place.",
+      "It centralizes tables, orders, kitchen and cash register so your team works faster with fewer mistakes. Built to be simple — no long manuals or complicated setup."
+    ]
+  },
+  "whoIsItFor": {
+    "title": "Who is it for?",
+    "headlinePrefix": "System for your",
+    "typewriterWords": ["Restaurant", "Café", "Ice cream shop", "Pizzeria", "Food truck", "Bar", "Bakery"],
+    "subtitle": "If your business runs on orders and you need faster tables, kitchen and checkout, Easy Restaurant is built for you."
+  },
+  "benefits": {
+    "title": "How can it benefit you?",
+    "items": [
+      {
+        "title": "Fewer order mistakes",
+        "description": "Orders reach the kitchen clearly. Less confusion, returns and customer complaints.",
+        "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&auto=format&fit=crop",
+        "imageAlt": "Dish served in a restaurant with a clear order flow"
+      },
+      {
+        "title": "Faster service",
+        "description": "Staff take orders in seconds and the kitchen prioritizes dishes without wasting time.",
+        "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&auto=format&fit=crop",
+        "imageAlt": "Waitstaff serving customers in a busy restaurant"
+      },
+      {
+        "title": "Instant cash control",
+        "description": "Payments, bill splitting and daily close in one place — no manual reconciliations.",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&auto=format&fit=crop",
+        "imageAlt": "Card payment on a point-of-sale terminal"
+      },
+      {
+        "title": "Business visibility",
+        "description": "Sales reports, top products and shift performance to make better decisions.",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop",
+        "imageAlt": "Sales charts and business metrics on screen"
+      },
+      {
+        "title": "Easy to learn",
+        "description": "Intuitive interface: your team can start using it the same day.",
+        "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&auto=format&fit=crop",
+        "imageAlt": "Person using a tablet with a simple interface"
+      },
+      {
+        "title": "Grows with your venue",
+        "description": "From a food truck to a multi-zone restaurant: scale without switching systems.",
+        "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&auto=format&fit=crop",
+        "imageAlt": "Busy restaurant with many active tables"
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "How does it work?",
+    "steps": [
+      {
+        "title": "1. Take the order",
+        "description": "Staff register orders from tablet or PC. Sent instantly to kitchen and bar.",
+        "image": "https://images.unsplash.com/photo-1556740758-90de374c12d4?w=600&auto=format&fit=crop",
+        "imageAlt": "Waitstaff taking an order on a tablet in a restaurant"
+      },
+      {
+        "title": "2. Real-time kitchen",
+        "description": "Kitchen sees orders on screen, prioritizes dishes and marks them ready.",
+        "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&auto=format&fit=crop",
+        "imageAlt": "Restaurant kitchen preparing orders in real time"
+      },
+      {
+        "title": "3. Bill and close",
+        "description": "Generate the check, split payments, print receipts and update daily inventory.",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&auto=format&fit=crop",
+        "imageAlt": "Payment on a point-of-sale terminal"
+      },
+      {
+        "title": "4. End-of-day reports",
+        "description": "Review daily sales, top products and performance by shift.",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop",
+        "imageAlt": "Screen showing sales reports and metrics"
+      }
+    ]
+  },
+  "screenshots": {
+    "title": "Screenshots",
+    "items": [
+      {
+        "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&auto=format&fit=crop",
+        "alt": "Easy Restaurant sales dashboard",
+        "caption": "Main dashboard with daily sales"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&auto=format&fit=crop",
+        "alt": "Active orders view in Easy Restaurant",
+        "caption": "Active orders and table status"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&auto=format&fit=crop",
+        "alt": "Menu management in Easy Restaurant",
+        "caption": "Menu and product categories"
+      }
+    ]
+  },
+  "tutorials": {
+    "title": "Tutorials",
+    "items": [
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Getting started with Easy Restaurant",
+        "duration": "5 min"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Setting up tables and zones",
+        "duration": "8 min"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Cash register close and reports",
+        "duration": "6 min"
+      }
+    ]
+  },
+  "successStories": {
+    "title": "Success stories",
+    "items": [
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "quote": "We cut order errors by 40% and service is noticeably faster.",
+        "author": "María González",
+        "business": "La Esquina Restaurant"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "quote": "Within a week everything was running. The team learned it without long training.",
+        "author": "Carlos Méndez",
+        "business": "Café Central"
+      }
+    ]
+  },
+  "pricingSection": {
+    "title": "Available offers",
+    "subtitle": "Choose the plan that best fits your business.",
+    "contactCta": "Contact to purchase"
+  },
+  "cta": {
+    "trial": "Free 15-day trial",
+    "pricing": "View pricing",
+    "downloadLabel": "Download",
+    "downloadSublabel": "Free"
+  }
+}

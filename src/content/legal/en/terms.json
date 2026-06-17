@@ -1,0 +1,82 @@
+{
+  "slug": "terms",
+  "seo": {
+    "title": "Terms and Conditions | Resoria",
+    "description": "Terms and conditions for using the Resoria website and purchasing software products."
+  },
+  "title": "Terms and Conditions",
+  "lastUpdated": "Last updated: June 2026",
+  "intro": "These terms and conditions («Terms») govern access to this website and the purchase of software products offered by Resoria, including Easy Restaurant and Mi Inventario. By using the site or purchasing our products, you agree to these Terms.",
+  "sections": [
+    {
+      "title": "1. General information",
+      "paragraphs": [
+        "Resoria sells business software under the Easy Restaurant and Mi Inventario brands, available as lifetime licenses or monthly SaaS subscriptions. Information published on this site is for informational purposes and may be updated without prior notice."
+      ]
+    },
+    {
+      "title": "2. Use of the website",
+      "paragraphs": [
+        "You agree to use this site lawfully and not to engage in activities that may damage, disrupt or overload our systems. Unauthorized access to restricted areas, unauthorized copying of content or fraudulent use of the site is prohibited."
+      ]
+    },
+    {
+      "title": "3. Products, licenses and subscriptions",
+      "paragraphs": [
+        "Products may be offered as a perpetual license installed on your device or as a monthly subscription service (SaaS). Features, limits, pricing and plan terms are described on the website and may vary by product.",
+        "Purchasing a license or subscription does not transfer ownership of the software, but grants a right of use in accordance with these Terms and the applicable product documentation."
+      ]
+    },
+    {
+      "title": "4. Free trial",
+      "paragraphs": [
+        "When we offer a free trial period, it will be subject to the conditions stated at the time of request. Resoria may modify, limit or end free trials at any time."
+      ]
+    },
+    {
+      "title": "5. Payments and billing",
+      "paragraphs": [
+        "Prices are shown in US dollars (USD) unless otherwise stated. Payment may be made through the methods enabled on the site, such as bank transfer, PayPal or others as agreed. SaaS subscriptions are billed on a recurring basis until cancelled according to the plan terms.",
+        "Non-payment, misuse or breach of these Terms may result in suspension of access to the software."
+      ]
+    },
+    {
+      "title": "6. User obligations",
+      "paragraphs": [
+        "You are responsible for the accuracy of the information you provide, safeguarding your access credentials and using the software in compliance with the law and good business practices. You must not use our products for unlawful activities or attempt to decompile, copy or redistribute the software without express authorization."
+      ]
+    },
+    {
+      "title": "7. Intellectual property",
+      "paragraphs": [
+        "The website, software, logos, text, designs and other Resoria content are protected by intellectual property laws. Unauthorized reproduction or exploitation is prohibited."
+      ]
+    },
+    {
+      "title": "8. Availability and support",
+      "paragraphs": [
+        "We strive to keep the site and services available, but we do not guarantee uninterrupted operation. Technical support is provided according to the purchased plan and published contact channels."
+      ]
+    },
+    {
+      "title": "9. Limitation of liability",
+      "paragraphs": [
+        "To the extent permitted by law, Resoria shall not be liable for indirect damages, loss of profits, loss of data or harm arising from the use or inability to use the site or software. The software is provided «as is», without implied warranties beyond those required by applicable law.",
+        "You are responsible for backing up your information and verifying that the product meets your business needs."
+      ]
+    },
+    {
+      "title": "10. Modifications",
+      "paragraphs": [
+        "We may modify these Terms, prices or product features. Changes will take effect when published on this page or communicated through our usual contact channels where appropriate."
+      ]
+    },
+    {
+      "title": "11. Governing law",
+      "paragraphs": [
+        "These Terms shall be governed by the applicable law in Resoria's jurisdiction, without prejudice to mandatory consumer rights that may apply in your country of residence."
+      ]
+    }
+  ],
+  "contactNote": "For questions about these Terms, contact us through the contact section of our website."
+}

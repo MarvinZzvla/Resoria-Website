@@ -1,0 +1,160 @@
+{
+  "slug": "mi-inventario",
+  "seo": {
+    "title": "Mi Inventario — Software de inventario | Resoria",
+    "description": "Conoce Mi Inventario: control de stock, alertas y reportes. Capturas, tutoriales y casos de éxito."
+  },
+  "heroGif": "https://media.giphy.com/media/26BRuo6sLetdllPAQ/giphy.gif",
+  "backLabel": "Volver a productos",
+  "whatIs": {
+    "title": "¿Qué es Mi Inventario?",
+    "paragraphs": [
+      "Mi Inventario es un sistema para controlar el stock de tu tienda, bodega, ferretería o farmacia con precisión.",
+      "Registra entradas y salidas, recibe alertas de stock bajo y genera reportes para saber qué reponer y cuándo. Funciona en local o en la nube según la modalidad que elijas."
+    ]
+  },
+  "whoIsItFor": {
+    "title": "¿Para quién sirve?",
+    "headlinePrefix": "Sistema para tu",
+    "typewriterWords": ["Ferretería", "Farmacia", "Bodega", "Tienda", "Almacén", "Supermercado", "Distribuidora"],
+    "subtitle": "Si compras y vendes productos y necesitas controlar tu stock con precisión, Mi Inventario es tu solución."
+  },
+  "benefits": {
+    "title": "¿Cómo te puede beneficiar?",
+    "items": [
+      {
+        "title": "Stock siempre actualizado",
+        "description": "Cada entrada y salida queda registrada. Sabes exactamente cuánto tienes de cada producto.",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&auto=format&fit=crop",
+        "imageAlt": "Estanterías de almacén con productos organizados"
+      },
+      {
+        "title": "Evita quiebres de inventario",
+        "description": "Alertas automáticas cuando un producto está por agotarse para reponer a tiempo.",
+        "image": "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=600&auto=format&fit=crop",
+        "imageAlt": "Estante de tienda con pocos productos restantes"
+      },
+      {
+        "title": "Menos pérdidas y mermas",
+        "description": "Detecta diferencias, productos lentos y exceso de stock antes de que cuesten dinero.",
+        "image": "https://images.unsplash.com/photo-1578574577316-4bf89dbc7d88?w=600&auto=format&fit=crop",
+        "imageAlt": "Trabajador revisando inventario en bodega"
+      },
+      {
+        "title": "Reportes para decidir",
+        "description": "Consulta movimientos, valor del inventario y productos más vendidos en segundos.",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop",
+        "imageAlt": "Panel con reportes y estadísticas de negocio"
+      },
+      {
+        "title": "Ahorra tiempo operativo",
+        "description": "Olvídate de hojas de cálculo y conteos manuales que consumen horas cada semana.",
+        "image": "https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&auto=format&fit=crop",
+        "imageAlt": "Operario escaneando productos en almacén"
+      },
+      {
+        "title": "Multi-sucursal listo",
+        "description": "Administra varios puntos de venta o bodegas desde un solo sistema centralizado.",
+        "image": "https://images.unsplash.com/photo-1566576721346-5663859dce93?w=600&auto=format&fit=crop",
+        "imageAlt": "Centro logístico con varias ubicaciones de almacenamiento"
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "¿Cómo funciona?",
+    "steps": [
+      {
+        "title": "1. Registra productos",
+        "description": "Carga tu catálogo con códigos, categorías, precios y niveles mínimos de stock.",
+        "image": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?w=600&auto=format&fit=crop",
+        "imageAlt": "Productos organizados en estantería de tienda"
+      },
+      {
+        "title": "2. Entradas y salidas",
+        "description": "Documenta compras, ventas y ajustes. El stock se actualiza automáticamente.",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&auto=format&fit=crop",
+        "imageAlt": "Mercancía entrando y saliendo de un almacén"
+      },
+      {
+        "title": "3. Alertas inteligentes",
+        "description": "Recibe avisos cuando un producto está por agotarse o supera el stock ideal.",
+        "image": "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=600&auto=format&fit=crop",
+        "imageAlt": "Estante con pocos productos indicando stock bajo"
+      },
+      {
+        "title": "4. Reportes y decisiones",
+        "description": "Analiza movimientos, productos más vendidos y valor total del inventario.",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop",
+        "imageAlt": "Panel con reportes de inventario y ventas"
+      }
+    ]
+  },
+  "screenshots": {
+    "title": "Capturas de pantalla",
+    "items": [
+      {
+        "src": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&auto=format&fit=crop",
+        "alt": "Vista de almacén en Mi Inventario",
+        "caption": "Listado de productos en stock"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1553413077-190dd305871c?w=900&auto=format&fit=crop",
+        "alt": "Reportes de inventario en Mi Inventario",
+        "caption": "Reportes y movimientos del mes"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?w=900&auto=format&fit=crop",
+        "alt": "Alertas de stock bajo en Mi Inventario",
+        "caption": "Alertas de reposición automáticas"
+      }
+    ]
+  },
+  "tutorials": {
+    "title": "Tutoriales",
+    "items": [
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Configurar tu inventario inicial",
+        "duration": "7 min"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Entradas, salidas y ajustes",
+        "duration": "6 min"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Reportes y alertas de stock",
+        "duration": "5 min"
+      }
+    ]
+  },
+  "successStories": {
+    "title": "Casos de éxito",
+    "items": [
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "quote": "Ahora sabemos exactamente qué reponer cada semana. Se acabaron las sorpresas de productos agotados.",
+        "author": "Carlos Ríos",
+        "business": "Bodega El Ahorro"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "quote": "El control de stock en nuestra ferretería mejoró muchísimo. Los reportes nos ahorran horas cada mes.",
+        "author": "Ana Lucía",
+        "business": "Ferretería El Tornillo"
+      }
+    ]
+  },
+  "pricingSection": {
+    "title": "Ofertas disponibles",
+    "subtitle": "Elige la modalidad que mejor se adapte a tu negocio.",
+    "contactCta": "Contactar para comprar"
+  },
+  "cta": {
+    "trial": "Prueba gratis por 15 días",
+    "pricing": "Ver precios",
+    "downloadLabel": "Descargar",
+    "downloadSublabel": "Gratis"
+  }
+}

@@ -1,0 +1,125 @@
+---
+import type { SiteContent } from '../types/content';
+import Seo from '../components/Seo.astro';
+import Header from '../components/Header.astro';
+import { getLegalPaths } from '../lib/legal';
+import '../styles/global.css';
+
+interface Props {
+  content: SiteContent;
+  pageSeo?: { title: string; description: string };
+  canonicalPath?: string;
+  alternatePath?: string;
+  hideHeader?: boolean;
+}
+
+const { content, pageSeo, canonicalPath, alternatePath, hideHeader = false } = Astro.props;
+const siteUrl = Astro.site?.href.replace(/\/$/, '') ?? 'https://resoria.com';
+const legalPaths = getLegalPaths(content.locale);
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Resoria',
+  url: siteUrl,
+  logo: `${siteUrl}/logos/resoria.png`,
+  description: content.seo.description,
+  email: content.contactSection.contactInfo.email,
+  telephone: content.contactSection.contactInfo.phone,
+  sameAs: [],
+};
+
+const softwareSchemas = content.products.map((product) => ({
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: product.name,
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Web, Windows',
+  description: product.description,
+  offers: product.plans.map((plan) => ({
+    '@type': 'Offer',
+    name: plan.name,
+    price: plan.price.replace('$', ''),
+    priceCurrency: 'USD',
+    description: plan.features.join('. '),
+    url: `${siteUrl}/${content.locale}/#${content.contactSection.id}`,
+  })),
+  provider: {
+    '@type': 'Organization',
+    name: 'Resoria',
+    url: siteUrl,
+  },
+}));
+
+const jsonLd = [organizationSchema, ...softwareSchemas];
+---
+
+<!doctype html>
+<html lang={content.lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <Seo
+      title={pageSeo?.title ?? content.seo.title}
+      description={pageSeo?.description ?? content.seo.description}
+      locale={content.locale}
+      alternateLocale={content.alternateLocale}
+      ogImageAlt={content.seo.ogImageAlt}
+      canonicalPath={canonicalPath}
+      alternatePath={alternatePath}
+    />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    {!hideHeader && <Header content={content} />}
+    <main id="main-content">
+      <slot />
+    </main>
+    <footer class="mt-8 border-t border-white/10 py-12">
+      <div class="mx-auto flex w-[min(1120px,92vw)] flex-col items-center gap-3 text-center">
+        <div class="flex flex-col items-center gap-0">
+          <div class="leading-[0] -mb-2 sm:-mb-3">
+            <img
+              src="/logos/resoria-transparent.png"
+              alt="Resoria"
+              width="400"
+              height="140"
+              loading="lazy"
+              decoding="async"
+              class="mx-auto block h-20 w-auto opacity-90 sm:h-24 md:h-28"
+            />
+          </div>
+          <p class="mt-1 text-sm text-resoria-muted">{content.footer.tagline}</p>
+        </div>
+        <nav aria-label={content.lang === 'es' ? 'Enlaces del pie de página' : 'Footer links'}>
+          <ul class="flex gap-6">
+            <li>
+              <a href={legalPaths.privacy} class="text-sm text-resoria-muted transition-colors hover:text-resoria-blue">
+                {content.footer.privacy}
+              </a>
+            </li>
+            <li>
+              <a href={legalPaths.terms} class="text-sm text-resoria-muted transition-colors hover:text-resoria-blue">
+                {content.footer.terms}
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <p class="text-xs text-resoria-dim">
+          &copy; {new Date().getFullYear()} Resoria. {content.footer.rights}
+        </p>
+      </div>
+    </footer>
+    <script>
+      import '../scripts/scroll-reveal.ts';
+    </script>
+  </body>
+</html>

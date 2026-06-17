@@ -1,0 +1,145 @@
+---
+import type { SiteContent } from '../types/content';
+import { getProductDetailPath } from '../lib/product-details';
+
+interface Props {
+  content: SiteContent;
+}
+
+const { content } = Astro.props;
+const { productsSection, products } = content;
+const popularLabel = content.lang === 'es' ? 'Más popular' : 'Most popular';
+
+const accentBorder = {
+  orange: 'border-t-resoria-orange',
+  emerald: 'border-t-resoria-emerald',
+} as const;
+
+const accentBtn = {
+  orange: 'from-resoria-orange to-resoria-orange-dark hover:shadow-[0_8px_32px_rgba(249,115,22,0.25)]',
+  emerald: 'from-resoria-emerald to-resoria-emerald-dark hover:shadow-[0_8px_32px_rgba(16,185,129,0.25)]',
+} as const;
+
+const accentCheck = {
+  orange: 'text-resoria-orange',
+  emerald: 'text-resoria-emerald',
+} as const;
+
+const logoClass = {
+  'easy-restaurant':
+    'mx-auto block h-56 w-auto sm:h-64 md:h-72',
+  'mi-inventario': 'mx-auto block max-h-24 w-auto sm:max-h-28',
+} as const;
+
+const logoTitleGap = {
+  'easy-restaurant': '-mb-12 sm:-mb-16 md:-mb-20',
+  'mi-inventario': 'mb-4',
+} as const;
+
+const titleOffset = {
+  'easy-restaurant': '-mt-4 sm:-mt-6',
+  'mi-inventario': '',
+} as const;
+
+const learnMoreClass = (accent: keyof typeof accentBtn) =>
+  `learn-more-neon learn-more-neon--${accent}`;
+
+function isDownloadReady(url: string): boolean {
+  return Boolean(url) && url !== '#' && !url.startsWith('#');
+}
+
+const trialBtnClass = (accent: keyof typeof accentBtn) =>
+  `inline-flex w-full cursor-pointer select-none items-center justify-center rounded-xl bg-gradient-to-r px-5 py-3 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97] active:brightness-95 ${accentBtn[accent]}`;
+---
+
+<section id={productsSection.id} class="pt-4 pb-12 md:pt-6 md:pb-14" aria-labelledby="products-heading">
+  <div class="mx-auto w-[min(1120px,92vw)]">
+    <header class="mb-8 text-center" data-animate>
+      <h2 id="products-heading" class="mb-3 text-3xl font-bold md:text-4xl">{productsSection.title}</h2>
+      <p class="mx-auto max-w-xl text-resoria-muted">{productsSection.subtitle}</p>
+    </header>
+
+    <div class="flex flex-col gap-10">
+      {products.map((product, index) => (
+        <article
+          class={`rounded-2xl border border-white/10 border-t-4 bg-resoria-card p-6 shadow-2xl shadow-black/40 md:p-10 ${accentBorder[product.accent]}`}
+          data-animate
+          style={`--delay: ${index * 0.1}s`}
+          aria-labelledby={`product-${product.id}-title`}
+        >
+          <header class="mb-8 text-center">
+            <div class={`leading-[0] ${logoTitleGap[product.id as keyof typeof logoTitleGap]}`}>
+              <img
+                src={product.logo}
+                alt={product.logoAlt}
+                width={product.id === 'easy-restaurant' ? 640 : 200}
+                height={product.id === 'easy-restaurant' ? 256 : 80}
+                loading="lazy"
+                decoding="async"
+                class={logoClass[product.id as keyof typeof logoClass]}
+              />
+            </div>
+            {product.id === 'easy-restaurant' ? (
+              <h3 id={`product-${product.id}-title`} class="sr-only">{product.name}</h3>
+            ) : (
+              <h3
+                id={`product-${product.id}-title`}
+                class={`text-2xl font-bold md:text-3xl ${titleOffset[product.id as keyof typeof titleOffset]}`}
+              >{product.name}</h3>
+            )}
+            <p class={`font-medium text-resoria-muted ${product.id === 'easy-restaurant' ? '-mt-4 sm:-mt-6' : 'mt-1'}`}>{product.tagline}</p>
+            <p class="mx-auto mt-3 max-w-lg text-sm text-resoria-muted">{product.description}</p>
+            <a
+              href={getProductDetailPath(content.locale, product.id)}
+              class={`mt-6 ${learnMoreClass(product.accent)}`}
+            >
+              {productsSection.learnMoreCta}
+              <span class="learn-more-neon__arrow" aria-hidden="true">→</span>
+            </a>
+          </header>
+
+          <div class="grid gap-5 sm:grid-cols-2">
+            {product.plans.map((plan) => (
+              <div
+                class={`relative flex flex-col rounded-xl border bg-resoria-elevated p-6 transition-all duration-300 hover:-translate-y-1 ${plan.popular ? 'border-resoria-blue/60 shadow-lg shadow-resoria-blue/10' : 'border-white/10 hover:border-white/20'}`}
+              >
+                {plan.popular && (
+                  <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-resoria-blue to-resoria-blue-dark px-4 py-1 text-xs font-semibold text-white whitespace-nowrap">
+                    {popularLabel}
+                  </span>
+                )}
+                <h4 class="mt-2 text-lg font-semibold">{plan.name}</h4>
+                <p class="my-4">
+                  <span class="block text-4xl font-bold leading-none">{plan.price}</span>
+                  <span class="mt-1 block text-sm text-resoria-muted">{plan.period}</span>
+                </p>
+                <ul class="mb-6 flex-1 space-y-2">
+                  {plan.features.map((feature) => (
+                    <li class="flex gap-2 text-sm text-resoria-muted">
+                      <span class={`shrink-0 font-bold ${accentCheck[product.accent]}`}>✓</span>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                {isDownloadReady(product.downloadUrl) ? (
+                  <a
+                    href={product.downloadUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class={trialBtnClass(product.accent)}
+                  >
+                    {productsSection.trialCta}
+                  </a>
+                ) : (
+                  <button type="button" class={trialBtnClass(product.accent)}>
+                    {productsSection.trialCta}
+                  </button>
+                )}
+              </div>
+            ))}
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

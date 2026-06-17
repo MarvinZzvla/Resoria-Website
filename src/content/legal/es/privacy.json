@@ -1,0 +1,74 @@
+{
+  "slug": "privacidad",
+  "seo": {
+    "title": "Política de privacidad | Resoria",
+    "description": "Política de privacidad de Resoria. Información sobre el tratamiento de datos personales al usar nuestro sitio web y software."
+  },
+  "title": "Política de privacidad",
+  "lastUpdated": "Última actualización: junio de 2026",
+  "intro": "En Resoria («nosotros», «nuestro») respetamos tu privacidad. Esta política describe cómo recopilamos, usamos y protegemos la información personal cuando visitas nuestro sitio web, solicitas información, adquieres licencias o utilizas nuestros productos de software, incluidos Easy Restaurant y Mi Inventario.",
+  "sections": [
+    {
+      "title": "1. Responsable del tratamiento",
+      "paragraphs": [
+        "El responsable del tratamiento de tus datos personales es Resoria. Puedes contactarnos a través del correo electrónico o teléfono indicados en la sección de contacto de este sitio web."
+      ]
+    },
+    {
+      "title": "2. Datos que recopilamos",
+      "paragraphs": [
+        "Podemos recopilar los siguientes tipos de información: datos de identificación y contacto (nombre, correo electrónico, teléfono), datos comerciales relacionados con tu negocio, información sobre el producto o plan de interés, datos de facturación cuando realizas una compra, y datos técnicos de navegación (dirección IP, tipo de navegador, páginas visitadas) cuando utilizas nuestro sitio web.",
+        "Si utilizas nuestro software, también podemos tratar datos operativos que tú o tu negocio introduzca en la aplicación, como información de pedidos, inventario, ventas o usuarios internos, según el producto contratado."
+      ]
+    },
+    {
+      "title": "3. Finalidad del tratamiento",
+      "paragraphs": [
+        "Utilizamos tus datos para: responder consultas y solicitudes de información; gestionar pruebas gratuitas, licencias y suscripciones; procesar pagos y emitir comprobantes; prestar soporte técnico y atención al cliente; mejorar nuestros productos y servicios; enviar comunicaciones relacionadas con tu cuenta o contratación; cumplir obligaciones legales; y, con tu consentimiento cuando sea necesario, enviar información comercial sobre nuestros productos."
+      ]
+    },
+    {
+      "title": "4. Base legal",
+      "paragraphs": [
+        "Tratamos tus datos en base a la ejecución de un contrato o medidas precontractuales, al cumplimiento de obligaciones legales, a nuestro interés legítimo en operar y mejorar nuestro negocio, y, cuando corresponda, a tu consentimiento."
+      ]
+    },
+    {
+      "title": "5. Conservación de los datos",
+      "paragraphs": [
+        "Conservamos los datos personales durante el tiempo necesario para cumplir las finalidades descritas, mantener la relación comercial, resolver reclamaciones y cumplir obligaciones legales o fiscales. Posteriormente, los datos serán bloqueados o eliminados de forma segura."
+      ]
+    },
+    {
+      "title": "6. Compartición con terceros",
+      "paragraphs": [
+        "No vendemos tus datos personales. Podemos compartir información con proveedores que nos ayudan a operar el sitio web, procesar pagos, alojar servicios en la nube o prestar soporte, siempre bajo obligaciones de confidencialidad y tratamiento adecuado. También podremos comunicar datos cuando la ley lo exija."
+      ]
+    },
+    {
+      "title": "7. Seguridad",
+      "paragraphs": [
+        "Aplicamos medidas técnicas y organizativas razonables para proteger la información contra acceso no autorizado, pérdida, alteración o divulgación. Ningún sistema es completamente infalible, por lo que no podemos garantizar seguridad absoluta."
+      ]
+    },
+    {
+      "title": "8. Tus derechos",
+      "paragraphs": [
+        "Según la legislación aplicable, puedes solicitar acceso, rectificación, supresión, limitación u oposición al tratamiento de tus datos, así como la portabilidad cuando proceda. También puedes retirar tu consentimiento en cualquier momento si el tratamiento se basa en él. Para ejercer tus derechos, contáctanos por los medios indicados en este sitio."
+      ]
+    },
+    {
+      "title": "9. Cookies y tecnologías similares",
+      "paragraphs": [
+        "Nuestro sitio web puede utilizar cookies o tecnologías similares para mejorar la experiencia de navegación y analizar el uso del sitio. Puedes configurar tu navegador para rechazar cookies, aunque algunas funciones podrían verse afectadas."
+      ]
+    },
+    {
+      "title": "10. Cambios en esta política",
+      "paragraphs": [
+        "Podemos actualizar esta política de privacidad en cualquier momento. Publicaremos la versión vigente en esta página e indicaremos la fecha de la última actualización. Te recomendamos revisarla periódicamente."
+      ]
+    }
+  ],
+  "contactNote": "Si tienes preguntas sobre esta política o sobre el tratamiento de tus datos, escríbenos a través de la sección de contacto de nuestro sitio web o al correo indicado allí."
+}

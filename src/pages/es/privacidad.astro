@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LegalPage from '../../components/LegalPage.astro';
+import { getContent } from '../../lib/content';
+import { getLegalAlternatePaths, getLegalDocument } from '../../lib/legal';
+
+const content = getContent('es');
+const document = getLegalDocument('es', 'privacy');
+const alternate = getLegalAlternatePaths('privacy');
+---
+
+<BaseLayout
+  content={content}
+  pageSeo={document.seo}
+  canonicalPath="/es/privacidad/"
+  alternatePath={alternate.en}
+>
+  <LegalPage content={content} document={document} />
+</BaseLayout>

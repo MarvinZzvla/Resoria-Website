@@ -1,0 +1,160 @@
+{
+  "slug": "easy-restaurant",
+  "seo": {
+    "title": "Easy Restaurant — Software para restaurantes | Resoria",
+    "description": "Conoce Easy Restaurant: gestión de mesas, pedidos, cocina y caja. Capturas, tutoriales y casos de éxito."
+  },
+  "heroGif": "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjJyNWZ4MnU1bjZ3ZDRzcnNtYzE0M3FqMWRnZmdkcGM1ZG1vd21udCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wRLi2I7Hgyds1YaEkA/giphy.gif",
+  "backLabel": "Volver a productos",
+  "whatIs": {
+    "title": "¿Qué es Easy Restaurant?",
+    "paragraphs": [
+      "Easy Restaurant es un sistema completo para administrar tu restaurante, cafetería o food truck desde un solo lugar.",
+      "Centraliza mesas, comandas, cocina y caja para que tu equipo trabaje más rápido y con menos errores. Diseñado para ser simple: sin manuales largos ni configuraciones complicadas."
+    ]
+  },
+  "whoIsItFor": {
+    "title": "¿Para quién sirve?",
+    "headlinePrefix": "Sistema para tu",
+    "typewriterWords": ["Restaurante", "Cafetería", "Heladería", "Pizzería", "Food truck", "Bar", "Panadería"],
+    "subtitle": "Si tu negocio trabaja con comandas y necesitas agilizar mesas, cocina y caja, Easy Restaurant está hecho para ti."
+  },
+  "benefits": {
+    "title": "¿Cómo te puede beneficiar?",
+    "items": [
+      {
+        "title": "Menos errores en pedidos",
+        "description": "Las comandas llegan claras a cocina. Se reducen confusiones, devoluciones y quejas de clientes.",
+        "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&auto=format&fit=crop",
+        "imageAlt": "Plato servido en restaurante con comanda clara"
+      },
+      {
+        "title": "Servicio más rápido",
+        "description": "Los meseros toman órdenes en segundos y la cocina prioriza platos sin perder tiempo.",
+        "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&auto=format&fit=crop",
+        "imageAlt": "Meseros atendiendo en un restaurante con buen ritmo de servicio"
+      },
+      {
+        "title": "Control de caja al instante",
+        "description": "Cobros, divisiones de cuenta y cierre diario en un solo lugar, sin cuadres manuales.",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&auto=format&fit=crop",
+        "imageAlt": "Pago con tarjeta en terminal punto de venta"
+      },
+      {
+        "title": "Visibilidad del negocio",
+        "description": "Reportes de ventas, productos estrella y rendimiento por turno para decidir mejor.",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop",
+        "imageAlt": "Gráficos de ventas y métricas en pantalla"
+      },
+      {
+        "title": "Fácil de aprender",
+        "description": "Interfaz intuitiva: tu equipo empieza a usarlo el mismo día sin capacitación larga.",
+        "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&auto=format&fit=crop",
+        "imageAlt": "Persona usando una tablet con interfaz sencilla"
+      },
+      {
+        "title": "Crece con tu local",
+        "description": "Desde un food truck hasta un restaurante con varias zonas: escala sin cambiar de sistema.",
+        "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&auto=format&fit=crop",
+        "imageAlt": "Restaurante concurrido con varias mesas activas"
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "¿Cómo funciona?",
+    "steps": [
+      {
+        "title": "1. Toma el pedido",
+        "description": "El mesero registra la orden desde tablet o PC. Se envía al instante a cocina y barra.",
+        "image": "https://images.unsplash.com/photo-1556740758-90de374c12d4?w=600&auto=format&fit=crop",
+        "imageAlt": "Mesero tomando un pedido con tablet en restaurante"
+      },
+      {
+        "title": "2. Cocina en tiempo real",
+        "description": "La cocina ve los pedidos en pantalla, prioriza platos y marca cuando están listos.",
+        "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&auto=format&fit=crop",
+        "imageAlt": "Cocina de restaurante preparando pedidos en tiempo real"
+      },
+      {
+        "title": "3. Cobra y cierra",
+        "description": "Genera la cuenta, divide pagos, imprime ticket y actualiza el inventario básico del día.",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&auto=format&fit=crop",
+        "imageAlt": "Cobro en terminal punto de venta"
+      },
+      {
+        "title": "4. Reportes al cierre",
+        "description": "Consulta ventas del día, productos más vendidos y rendimiento por turno.",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop",
+        "imageAlt": "Pantalla con reportes y métricas de ventas"
+      }
+    ]
+  },
+  "screenshots": {
+    "title": "Capturas de pantalla",
+    "items": [
+      {
+        "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&auto=format&fit=crop",
+        "alt": "Panel de control de ventas de Easy Restaurant",
+        "caption": "Panel principal con ventas del día"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&auto=format&fit=crop",
+        "alt": "Vista de pedidos activos en Easy Restaurant",
+        "caption": "Pedidos activos y estado de mesas"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&auto=format&fit=crop",
+        "alt": "Gestión de menú en Easy Restaurant",
+        "caption": "Menú y categorías de productos"
+      }
+    ]
+  },
+  "tutorials": {
+    "title": "Tutoriales",
+    "items": [
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Primeros pasos con Easy Restaurant",
+        "duration": "5 min"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Configurar mesas y zonas",
+        "duration": "8 min"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Cierre de caja y reportes",
+        "duration": "6 min"
+      }
+    ]
+  },
+  "successStories": {
+    "title": "Casos de éxito",
+    "items": [
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "quote": "Redujimos los errores en pedidos un 40% y el servicio es notablemente más rápido.",
+        "author": "María González",
+        "business": "Restaurante La Esquina"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "quote": "En una semana ya teníamos todo funcionando. El equipo lo aprendió sin capacitación larga.",
+        "author": "Carlos Méndez",
+        "business": "Café Central"
+      }
+    ]
+  },
+  "pricingSection": {
+    "title": "Ofertas disponibles",
+    "subtitle": "Elige la modalidad que mejor se adapte a tu negocio.",
+    "contactCta": "Contactar para comprar"
+  },
+  "cta": {
+    "trial": "Prueba gratis por 15 días",
+    "pricing": "Ver precios",
+    "downloadLabel": "Descargar",
+    "downloadSublabel": "Gratis"
+  }
+}

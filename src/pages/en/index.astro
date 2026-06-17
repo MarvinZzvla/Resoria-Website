@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/Hero.astro';
+import ProductPricing from '../../components/ProductPricing.astro';
+import LicenseCompare from '../../components/LicenseCompare.astro';
+import SuccessStories from '../../components/SuccessStories.astro';
+import ContactBuy from '../../components/ContactBuy.astro';
+import { getContent } from '../../lib/content';
+
+const content = getContent('en');
+---
+
+<BaseLayout content={content}>
+  <Hero content={content} />
+  <ProductPricing content={content} />
+  <LicenseCompare content={content} />
+  <SuccessStories content={content} />
+  <ContactBuy content={content} />
+</BaseLayout>

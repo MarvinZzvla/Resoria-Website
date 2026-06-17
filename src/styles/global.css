@@ -1,0 +1,177 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Exo 2', system-ui, sans-serif;
+
+  --color-resoria-bg: #0a0a0f;
+  --color-resoria-elevated: #12121a;
+  --color-resoria-card: #16161f;
+  --color-resoria-blue: #00a8ff;
+  --color-resoria-blue-dark: #0066cc;
+  --color-resoria-orange: #f97316;
+  --color-resoria-orange-dark: #ea580c;
+  --color-resoria-emerald: #10b981;
+  --color-resoria-emerald-dark: #059669;
+  --color-resoria-muted: #e4e4ee;
+  --color-resoria-subtext: #e4e4ee;
+  --color-resoria-silver: #e0e0ea;
+  --color-resoria-dim: #c4c4d2;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+    scroll-padding-top: 7.5rem;
+  }
+
+  body {
+    @apply bg-resoria-bg font-sans text-[#f0f0f5] antialiased;
+  }
+
+  img {
+    @apply block h-auto max-w-full;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-br from-white to-resoria-silver bg-clip-text text-transparent;
+  }
+}
+
+/* Scroll reveal — kept outside Tailwind for data-attribute pattern */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.6s ease var(--delay, 0s),
+    transform 0.6s ease var(--delay, 0s);
+}
+
+[data-animate].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  [data-animate] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .typewriter-cursor {
+    display: none;
+  }
+}
+
+.typewriter-cursor {
+  animation: typewriter-blink 0.9s step-end infinite;
+}
+
+@keyframes typewriter-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Conocer más — neon + pulse */
+.learn-more-neon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: filter 0.2s ease;
+}
+
+.learn-more-neon__arrow {
+  font-size: 1.5rem;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.learn-more-neon:hover .learn-more-neon__arrow {
+  transform: translateX(4px);
+}
+
+.learn-more-neon--orange {
+  color: #fb923c;
+  animation: learn-more-neon-orange 2.8s ease-in-out infinite;
+}
+
+.learn-more-neon--emerald {
+  color: #34d399;
+  animation: learn-more-neon-emerald 2.8s ease-in-out infinite;
+}
+
+.learn-more-neon--orange:hover {
+  filter: brightness(1.12);
+}
+
+.learn-more-neon--emerald:hover {
+  filter: brightness(1.12);
+}
+
+@keyframes learn-more-neon-orange {
+  0%,
+  100% {
+    transform: scale(1);
+    text-shadow:
+      0 0 8px rgba(249, 115, 22, 0.55),
+      0 0 18px rgba(249, 115, 22, 0.35);
+  }
+  50% {
+    transform: scale(1.07);
+    text-shadow:
+      0 0 14px rgba(249, 115, 22, 0.95),
+      0 0 28px rgba(249, 115, 22, 0.55),
+      0 0 42px rgba(249, 115, 22, 0.25);
+  }
+}
+
+@keyframes learn-more-neon-emerald {
+  0%,
+  100% {
+    transform: scale(1);
+    text-shadow:
+      0 0 8px rgba(16, 185, 129, 0.55),
+      0 0 18px rgba(16, 185, 129, 0.35);
+  }
+  50% {
+    transform: scale(1.07);
+    text-shadow:
+      0 0 14px rgba(16, 185, 129, 0.95),
+      0 0 28px rgba(16, 185, 129, 0.55),
+      0 0 42px rgba(16, 185, 129, 0.25);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .learn-more-neon--orange,
+  .learn-more-neon--emerald {
+    animation: none;
+  }
+
+  .learn-more-neon--orange {
+    text-shadow:
+      0 0 10px rgba(249, 115, 22, 0.45),
+      0 0 20px rgba(249, 115, 22, 0.25);
+  }
+
+  .learn-more-neon--emerald {
+    text-shadow:
+      0 0 10px rgba(16, 185, 129, 0.45),
+      0 0 20px rgba(16, 185, 129, 0.25);
+  }
+}

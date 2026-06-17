@@ -1,0 +1,82 @@
+{
+  "slug": "terminos",
+  "seo": {
+    "title": "Términos y condiciones | Resoria",
+    "description": "Términos y condiciones de uso del sitio web y adquisición de software de Resoria."
+  },
+  "title": "Términos y condiciones",
+  "lastUpdated": "Última actualización: junio de 2026",
+  "intro": "Estos términos y condiciones («Términos») regulan el acceso a este sitio web y la contratación de los productos de software ofrecidos por Resoria, incluidos Easy Restaurant y Mi Inventario. Al utilizar el sitio o adquirir nuestros productos, aceptas estos Términos.",
+  "sections": [
+    {
+      "title": "1. Información general",
+      "paragraphs": [
+        "Resoria comercializa software para negocios bajo las marcas Easy Restaurant y Mi Inventario, en modalidades de licencia de por vida o suscripción SaaS. La información publicada en este sitio tiene carácter informativo y puede actualizarse sin previo aviso."
+      ]
+    },
+    {
+      "title": "2. Uso del sitio web",
+      "paragraphs": [
+        "Te comprometes a utilizar este sitio de forma lícita y a no realizar actividades que puedan dañar, interrumpir o sobrecargar nuestros sistemas. No está permitido intentar acceder sin autorización a áreas restringidas, copiar contenidos con fines no permitidos ni utilizar el sitio para fines fraudulentos."
+      ]
+    },
+    {
+      "title": "3. Productos, licencias y suscripciones",
+      "paragraphs": [
+        "Los productos pueden ofrecerse como licencia perpetua instalada en tu equipo o como servicio de suscripción mensual (SaaS). Las características, límites, precios y modalidades de cada plan se describen en el sitio web y pueden variar según el producto contratado.",
+        "La adquisición de una licencia o suscripción no transfiere la propiedad del software, sino un derecho de uso conforme a estos Términos y a la documentación aplicable del producto."
+      ]
+    },
+    {
+      "title": "4. Prueba gratuita",
+      "paragraphs": [
+        "Cuando ofrecemos un periodo de prueba gratuita, este estará sujeto a las condiciones indicadas al momento de la solicitud. Resoria podrá modificar, limitar o finalizar las pruebas gratuitas en cualquier momento."
+      ]
+    },
+    {
+      "title": "5. Pagos y facturación",
+      "paragraphs": [
+        "Los precios se muestran en dólares estadounidenses (USD), salvo que se indique lo contrario. El pago puede realizarse por los medios habilitados en el sitio, como transferencia bancaria, PayPal u otros acordados. Las suscripciones SaaS se facturan de forma recurrente hasta su cancelación conforme a las condiciones del plan.",
+        "El impago, el uso indebido o el incumplimiento de estos Términos pueden dar lugar a la suspensión del acceso al software."
+      ]
+    },
+    {
+      "title": "6. Obligaciones del usuario",
+      "paragraphs": [
+        "Eres responsable de la veracidad de la información que nos proporciones, de custodiar tus credenciales de acceso y de utilizar el software conforme a la ley y a las buenas prácticas comerciales. No debes utilizar nuestros productos para actividades ilícitas ni intentar descompilar, copiar o redistribuir el software salvo autorización expresa."
+      ]
+    },
+    {
+      "title": "7. Propiedad intelectual",
+      "paragraphs": [
+        "El sitio web, el software, los logotipos, textos, diseños y demás contenidos de Resoria están protegidos por las leyes de propiedad intelectual. Queda prohibida su reproducción o explotación no autorizada."
+      ]
+    },
+    {
+      "title": "8. Disponibilidad y soporte",
+      "paragraphs": [
+        "Nos esforzamos por mantener el sitio y los servicios disponibles, pero no garantizamos funcionamiento ininterrumpido. El soporte técnico se prestará según el plan contratado y los canales de contacto publicados."
+      ]
+    },
+    {
+      "title": "9. Limitación de responsabilidad",
+      "paragraphs": [
+        "En la medida permitida por la ley, Resoria no será responsable por daños indirectos, pérdida de beneficios, pérdida de datos o perjuicios derivados del uso o imposibilidad de uso del sitio o del software. El software se proporciona «tal cual», sin garantías implícitas más allá de las exigidas por la normativa aplicable.",
+        "Eres responsable de realizar copias de seguridad de tu información y de verificar que el producto se ajusta a las necesidades de tu negocio."
+      ]
+    },
+    {
+      "title": "10. Modificaciones",
+      "paragraphs": [
+        "Podemos modificar estos Términos, los precios o las características de los productos. Los cambios entrarán en vigor al publicarse en esta página o al comunicarse por los medios habituales de contacto cuando corresponda."
+      ]
+    },
+    {
+      "title": "11. Legislación aplicable",
+      "paragraphs": [
+        "Estos Términos se regirán por la legislación aplicable en la jurisdicción de Resoria, sin perjuicio de los derechos imperativos que puedan asistirte como consumidor según tu país de residencia."
+      ]
+    }
+  ],
+  "contactNote": "Para consultas sobre estos Términos, contáctanos a través de la sección de contacto de nuestro sitio web."
+}

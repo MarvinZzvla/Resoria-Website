@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LegalPage from '../../components/LegalPage.astro';
+import { getContent } from '../../lib/content';
+import { getLegalAlternatePaths, getLegalDocument } from '../../lib/legal';
+
+const content = getContent('en');
+const document = getLegalDocument('en', 'terms');
+const alternate = getLegalAlternatePaths('terms');
+---
+
+<BaseLayout
+  content={content}
+  pageSeo={document.seo}
+  canonicalPath="/en/terms/"
+  alternatePath={alternate.es}
+>
+  <LegalPage content={content} document={document} />
+</BaseLayout>

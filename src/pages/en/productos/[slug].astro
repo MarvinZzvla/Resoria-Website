@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ProductDetailPage from '../../../components/ProductDetailPage.astro';
+import { getContent } from '../../../lib/content';
+import { getProductDetail, productSlugs } from '../../../lib/product-details';
+
+export function getStaticPaths() {
+  return productSlugs.map((slug) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const content = getContent('en');
+const detail = getProductDetail('en', slug!);
+
+if (!detail) {
+  return Astro.redirect('/en/');
+}
+
+const product = content.products.find((p) => p.id === slug);
+if (!product) {
+  return Astro.redirect('/en/');
+}
+
+const canonicalPath = `/en/productos/${slug}/`;
+const alternatePath = `/es/productos/${slug}/`;
+---
+
+<BaseLayout
+  content={content}
+  pageSeo={detail.seo}
+  canonicalPath={canonicalPath}
+  alternatePath={alternatePath}
+  hideHeader={true}
+>
+  <ProductDetailPage
+    product={product}
+    detail={detail}
+    locale="en"
+    productsSectionId={content.productsSection.id}
+    contactSectionId={content.contactSection.id}
+  />
+</BaseLayout>

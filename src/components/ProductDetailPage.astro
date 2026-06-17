@@ -1,0 +1,342 @@
+---
+import type { Product } from '../types/content';
+import type { ProductDetail } from '../types/product-detail';
+import DownloadBadge from './DownloadBadge.astro';
+import YouTubeEmbed from './YouTubeEmbed.astro';
+
+interface Props {
+  product: Product;
+  detail: ProductDetail;
+  locale: string;
+  productsSectionId: string;
+  contactSectionId: string;
+}
+
+const { product, detail, locale, productsSectionId, contactSectionId } = Astro.props;
+const homePath = `/${locale}/`;
+const pricingHref = `${homePath}#${productsSectionId}`;
+const contactHref = `${homePath}#${contactSectionId}`;
+const popularLabel = locale === 'en' ? 'Most popular' : 'Más popular';
+
+const accentHero = {
+  orange: 'from-resoria-orange/30 to-resoria-bg',
+  emerald: 'from-resoria-emerald/30 to-resoria-bg',
+} as const;
+
+const accentText = {
+  orange: 'text-resoria-orange',
+  emerald: 'text-resoria-emerald',
+} as const;
+
+const accentBtn = {
+  orange: 'from-resoria-orange to-resoria-orange-dark hover:shadow-[0_8px_32px_rgba(249,115,22,0.25)]',
+  emerald: 'from-resoria-emerald to-resoria-emerald-dark hover:shadow-[0_8px_32px_rgba(16,185,129,0.25)]',
+} as const;
+
+const accentCheck = {
+  orange: 'text-resoria-orange',
+  emerald: 'text-resoria-emerald',
+} as const;
+
+const contactBtnClass = `inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r px-5 py-3 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97] active:brightness-95 ${accentBtn[product.accent]}`;
+
+const typewriterGradient = {
+  orange: 'from-resoria-orange to-[#ffb347]',
+  emerald: 'from-resoria-emerald to-[#34d399]',
+} as const;
+
+const typewriterWordsJson = JSON.stringify(detail.whoIsItFor.typewriterWords);
+const whoIsItForSeo = `${detail.whoIsItFor.headlinePrefix} ${detail.whoIsItFor.typewriterWords.join(', ')}`;
+const playLabel = locale === 'en' ? 'Play video' : 'Reproducir video';
+---
+
+<article>
+  <!-- Hero con GIF: logo, descarga y para quién sirve -->
+  <section class="relative overflow-hidden pt-6 pb-12 md:pt-8 md:pb-16" aria-labelledby="product-hero-title">
+    <div class="absolute inset-0 min-h-full" aria-hidden="true">
+      <img
+        src={detail.heroGif}
+        alt=""
+        class="h-full min-h-full w-full object-cover opacity-40"
+        loading="eager"
+        decoding="async"
+      />
+      <div class={`absolute inset-0 bg-gradient-to-b ${accentHero[product.accent]} via-resoria-bg/85 to-resoria-bg`}></div>
+    </div>
+
+    <div class="relative w-full px-[clamp(1.25rem,5vw,3rem)] pt-1">
+      <a
+        href={pricingHref}
+        class="mb-4 inline-flex items-center gap-2 text-sm font-medium text-resoria-muted transition-colors hover:text-resoria-blue md:mb-6"
+      >
+        <span aria-hidden="true">←</span> {detail.backLabel}
+      </a>
+
+      <div class="flex w-full flex-col gap-6 lg:flex-row lg:items-center lg:justify-between lg:gap-10">
+        <div class="flex min-w-0 flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-6">
+          <img
+            src={product.logo}
+            alt={product.logoAlt}
+            width={product.id === 'easy-restaurant' ? 640 : 280}
+            height={product.id === 'easy-restaurant' ? 256 : 112}
+            class={
+              product.id === 'easy-restaurant'
+                ? 'h-40 w-auto shrink-0 sm:h-48 md:h-56'
+                : 'h-24 w-auto shrink-0 sm:h-28'
+            }
+            decoding="async"
+          />
+          <div class="min-w-0 text-left">
+            <h1 id="product-hero-title" class="text-3xl font-bold md:text-4xl">{product.name}</h1>
+            <p class="mt-2 max-w-xl text-lg text-resoria-muted">{product.tagline}</p>
+          </div>
+        </div>
+
+        <div class="flex shrink-0 justify-start lg:justify-end">
+          <DownloadBadge
+            downloadUrl={product.downloadUrl}
+            label={detail.cta.downloadLabel}
+            sublabel={detail.cta.downloadSublabel}
+          />
+        </div>
+      </div>
+
+      <div class="mt-10 w-full border-t border-white/10 pt-10 text-center md:mt-12 md:pt-12" aria-labelledby="who-is-it-for-heading">
+        <div class="mx-auto max-w-3xl">
+          <h2 id="who-is-it-for-heading" class="mb-6 text-lg font-semibold tracking-wide text-resoria-dim uppercase md:mb-8 md:text-xl" data-animate>
+            {detail.whoIsItFor.title}
+          </h2>
+
+          <div data-animate>
+            <p class="text-2xl leading-snug font-bold sm:text-3xl md:text-4xl">
+              <span class="text-gradient">{detail.whoIsItFor.headlinePrefix} </span>
+              <span
+                class={`typewriter-text bg-gradient-to-r bg-clip-text text-transparent ${typewriterGradient[product.accent]}`}
+                data-typewriter
+                data-words={typewriterWordsJson}
+                aria-live="polite"
+                aria-atomic="true"
+              >{detail.whoIsItFor.typewriterWords[0]}</span><span
+                class={`typewriter-cursor font-light ${accentText[product.accent]}`}
+                data-typewriter-cursor
+                aria-hidden="true"
+              >|</span>
+            </p>
+            <span class="sr-only">{whoIsItForSeo}</span>
+            <p class="mx-auto mt-5 max-w-2xl text-base text-resoria-muted sm:mt-6 sm:text-lg">
+              {detail.whoIsItFor.subtitle}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cómo te puede beneficiar -->
+  <section class="py-12 md:py-14" aria-labelledby="benefits-heading">
+    <div class="mx-auto w-[min(1120px,92vw)]">
+      <h2 id="benefits-heading" class="mb-8 text-center text-2xl font-bold md:text-3xl" data-animate>
+        {detail.benefits.title}
+      </h2>
+      <ul class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {detail.benefits.items.map((benefit, i) => (
+          <li
+            class="overflow-hidden rounded-xl border border-white/10 bg-resoria-card transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-lg hover:shadow-black/20"
+            data-animate
+            style={`--delay: ${i * 0.06}s`}
+          >
+            <img
+              src={benefit.image}
+              alt={benefit.imageAlt}
+              width="600"
+              height="375"
+              loading="lazy"
+              decoding="async"
+              class="aspect-[16/10] w-full object-cover"
+            />
+            <div class="p-6">
+              <h3 class={`mb-2 text-lg font-semibold ${accentText[product.accent]}`}>{benefit.title}</h3>
+              <p class="text-sm leading-relaxed text-resoria-muted">{benefit.description}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Qué es -->
+  <section class="py-12 md:py-16" aria-labelledby="what-is-heading">
+    <div class="mx-auto w-[min(1120px,92vw)]">
+      <div
+        class="grid items-start gap-6 md:grid-cols-[minmax(11rem,16rem)_1fr] md:gap-10 lg:grid-cols-[minmax(13rem,22rem)_1fr] lg:gap-14"
+      >
+        <h2 id="what-is-heading" class="text-left text-2xl font-bold md:text-3xl lg:sticky lg:top-28" data-animate>
+          {detail.whatIs.title}
+        </h2>
+        <div class="min-w-0 space-y-4 text-left" data-animate>
+          {detail.whatIs.paragraphs.map((p) => (
+            <p class="text-base leading-relaxed text-resoria-muted sm:text-lg">{p}</p>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cómo funciona -->
+  <section class="border-y border-white/10 bg-resoria-card/50 py-12 md:py-14" aria-labelledby="how-it-works-heading">
+    <div class="mx-auto w-[min(1120px,92vw)]">
+      <h2 id="how-it-works-heading" class="mb-8 text-center text-2xl font-bold md:text-3xl" data-animate>
+        {detail.howItWorks.title}
+      </h2>
+      <ol class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        {detail.howItWorks.steps.map((step, i) => (
+          <li
+            class="overflow-hidden rounded-xl border border-white/10 bg-resoria-card transition-all duration-300 hover:-translate-y-1 hover:border-white/20"
+            data-animate
+            style={`--delay: ${i * 0.08}s`}
+          >
+            <img
+              src={step.image}
+              alt={step.imageAlt}
+              width="600"
+              height="375"
+              loading="lazy"
+              decoding="async"
+              class="aspect-[16/10] w-full object-cover"
+            />
+            <div class="p-5">
+              <strong class={`mb-2 block text-lg ${accentText[product.accent]}`}>{step.title}</strong>
+              <p class="text-sm leading-relaxed text-resoria-muted">{step.description}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <!-- Capturas -->
+  <section class="py-12 md:py-14" aria-labelledby="screenshots-heading">
+    <div class="mx-auto w-[min(1120px,92vw)]">
+      <h2 id="screenshots-heading" class="mb-8 text-center text-2xl font-bold md:text-3xl" data-animate>
+        {detail.screenshots.title}
+      </h2>
+      <div class="grid gap-6 md:grid-cols-3">
+        {detail.screenshots.items.map((shot, i) => (
+          <figure
+            class="overflow-hidden rounded-xl border border-white/10 bg-resoria-card transition-all duration-300 hover:-translate-y-1 hover:border-white/20"
+            data-animate
+            style={`--delay: ${i * 0.08}s`}
+          >
+            <img
+              src={shot.src}
+              alt={shot.alt}
+              width="900"
+              height="600"
+              loading="lazy"
+              decoding="async"
+              class="aspect-video w-full object-cover"
+            />
+            <figcaption class="p-4 text-sm text-resoria-muted">{shot.caption}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Tutoriales -->
+  <section class="border-t border-white/10 bg-resoria-card/50 py-12 md:py-14" aria-labelledby="tutorials-heading">
+    <div class="mx-auto w-[min(1120px,92vw)]">
+      <h2 id="tutorials-heading" class="mb-8 text-center text-2xl font-bold md:text-3xl" data-animate>
+        {detail.tutorials.title}
+      </h2>
+      <div class="grid gap-6 md:grid-cols-3">
+        {detail.tutorials.items.map((tutorial, i) => (
+          <article
+            class="overflow-hidden rounded-xl border border-white/10 bg-resoria-card"
+            data-animate
+            style={`--delay: ${i * 0.08}s`}
+          >
+            <YouTubeEmbed videoId={tutorial.videoId} title={tutorial.title} playLabel={playLabel} />
+            <div class="p-4">
+              <h3 class="font-semibold">{tutorial.title}</h3>
+              <p class="mt-1 text-sm text-resoria-dim">{tutorial.duration}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Casos de éxito -->
+  <section class="py-12 md:py-14" aria-labelledby="product-success-heading">
+    <div class="mx-auto w-[min(1120px,92vw)]">
+      <h2 id="product-success-heading" class="mb-8 text-center text-2xl font-bold md:text-3xl" data-animate>
+        {detail.successStories.title}
+      </h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        {detail.successStories.items.map((story, i) => (
+          <article
+            class="overflow-hidden rounded-xl border border-white/10 bg-resoria-card transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-xl hover:shadow-black/30"
+            data-animate
+            style={`--delay: ${i * 0.08}s`}
+          >
+            <YouTubeEmbed videoId={story.videoId} title={story.business} playLabel={playLabel} />
+            <div class="p-5">
+              <h3 class="mb-2 text-lg font-semibold">{story.business}</h3>
+              <p class="text-sm text-resoria-muted">{story.quote}</p>
+              <p class="mt-2 text-xs text-resoria-silver">&mdash; {story.author}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Ofertas y precios -->
+  <section class="border-t border-white/10 py-12 md:py-16" aria-labelledby="product-pricing-heading">
+    <div class="mx-auto w-[min(1120px,92vw)]">
+      <header class="mb-8 text-center" data-animate>
+        <h2 id="product-pricing-heading" class="mb-3 text-2xl font-bold md:text-3xl">
+          {detail.pricingSection.title}
+        </h2>
+        <p class="mx-auto max-w-xl text-resoria-muted">{detail.pricingSection.subtitle}</p>
+      </header>
+
+      <div class="mx-auto grid max-w-3xl gap-5 sm:grid-cols-2">
+        {product.plans.map((plan, i) => (
+          <article
+            class={`relative flex flex-col rounded-xl border bg-resoria-card p-6 transition-all duration-300 hover:-translate-y-1 ${plan.popular ? 'border-resoria-blue/60 shadow-lg shadow-resoria-blue/10' : 'border-white/10 hover:border-white/20'}`}
+            data-animate
+            style={`--delay: ${i * 0.08}s`}
+          >
+            {plan.popular && (
+              <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-resoria-blue to-resoria-blue-dark px-4 py-1 text-xs font-semibold whitespace-nowrap text-white">
+                {popularLabel}
+              </span>
+            )}
+            <h3 class="mt-2 text-lg font-semibold">{plan.name}</h3>
+            <p class="my-4">
+              <span class="block text-4xl font-bold leading-none">{plan.price}</span>
+              <span class="mt-1 block text-sm text-resoria-muted">{plan.period}</span>
+            </p>
+            <ul class="mb-6 flex-1 space-y-2">
+              {plan.features.map((feature) => (
+                <li class="flex gap-2 text-sm text-resoria-muted">
+                  <span class={`shrink-0 font-bold ${accentCheck[product.accent]}`}>✓</span>
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+            <a href={contactHref} class={contactBtnClass}>
+              {detail.pricingSection.contactCta}
+            </a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</article>
+
+<script>
+  import '../scripts/typewriter.ts';
+</script>
