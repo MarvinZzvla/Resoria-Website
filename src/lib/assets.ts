@@ -1,3 +1,5 @@
+import { SITE_ORIGIN } from '../../site.config.mjs';
+
 function normalizeBase(base: string): string {
   if (!base || base === '/') return '/';
   return base.endsWith('/') ? base : `${base}/`;
@@ -17,7 +19,7 @@ export function publicAsset(path: string): string {
 
 /** URL absoluta del sitio, incluyendo base path si existe */
 export function absoluteUrl(path: string, site?: URL | string): string {
-  const siteHref = (typeof site === 'string' ? site : site?.href) ?? 'https://resoria.com';
+  const siteHref = (typeof site === 'string' ? site : site?.href) ?? SITE_ORIGIN;
   const origin = siteHref.replace(/\/$/, '');
   const base = normalizeBase(import.meta.env.BASE_URL);
   const root = base === '/' ? `${origin}/` : `${origin}${base}`;

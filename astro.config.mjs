@@ -1,13 +1,11 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
-
 import tailwindcss from '@tailwindcss/vite';
+import { SITE_ORIGIN, SITE_BASE_PATH } from './site.config.mjs';
 
-// Producción (dominio propio): SITE_URL=https://resoria.com BASE_PATH=/
-// GitHub Pages: SITE_URL=https://marvinzzvla.github.io BASE_PATH=/Restoria-Website
-const SITE_URL = process.env.SITE_URL ?? 'https://resorias.com';
-const BASE_PATH = process.env.BASE_PATH ?? '/';
+const SITE_URL = process.env.SITE_URL ?? SITE_ORIGIN;
+const BASE_PATH = process.env.BASE_PATH ?? SITE_BASE_PATH;
 
 export default defineConfig({
   site: SITE_URL,

@@ -1,5 +1,6 @@
 ---
 import { absoluteUrl, publicAsset } from '../lib/assets';
+import { SITE_ORIGIN } from '../../site.config.mjs';
 
 interface Props {
   title: string;
@@ -23,7 +24,7 @@ const {
   alternatePath,
 } = Astro.props;
 
-const siteUrl = Astro.site?.href.replace(/\/$/, '') ?? 'https://resorias.com';
+const siteUrl = Astro.site?.href.replace(/\/$/, '') ?? SITE_ORIGIN;
 const canonical = canonicalPath
   ? absoluteUrl(canonicalPath, siteUrl)
   : absoluteUrl(`/${locale}/`, siteUrl);

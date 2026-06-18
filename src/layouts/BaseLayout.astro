@@ -2,6 +2,7 @@
 import type { SiteContent } from '../types/content';
 import Seo from '../components/Seo.astro';
 import Header from '../components/Header.astro';
+import { SITE_ORIGIN } from '../../site.config.mjs';
 import { absoluteUrl, publicAsset, sitePath } from '../lib/assets';
 import { getLegalPaths } from '../lib/legal';
 import '../styles/global.css';
@@ -15,7 +16,7 @@ interface Props {
 }
 
 const { content, pageSeo, canonicalPath, alternatePath, hideHeader = false } = Astro.props;
-const siteUrl = Astro.site?.href.replace(/\/$/, '') ?? 'https://resoria.com';
+const siteUrl = Astro.site?.href.replace(/\/$/, '') ?? SITE_ORIGIN;
 const legalPaths = getLegalPaths(content.locale);
 
 const organizationSchema = {
