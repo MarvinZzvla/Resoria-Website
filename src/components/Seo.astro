@@ -23,7 +23,7 @@ const {
   alternatePath,
 } = Astro.props;
 
-const siteUrl = Astro.site?.href.replace(/\/$/, '') ?? 'https://resoria.com';
+const siteUrl = Astro.site?.href.replace(/\/$/, '') ?? 'https://resorias.com';
 const canonical = canonicalPath
   ? absoluteUrl(canonicalPath, siteUrl)
   : absoluteUrl(`/${locale}/`, siteUrl);

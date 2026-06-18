@@ -43,4 +43,6 @@ El sitio se publica en **GitHub Pages**:
 
 El repositorio no incluye `dist/` (es correcto). GitHub Actions compila y despliega automáticamente al hacer push a `master`.
 
+**Activar Pages (solo una vez):** en el repo ve a **Settings → Pages → Build and deployment → Source** y elige **GitHub Actions** (no «Deploy from a branch»). Luego vuelve a ejecutar el workflow o haz push.
+
 © Resoria — Easy Restaurant & Mi Inventario

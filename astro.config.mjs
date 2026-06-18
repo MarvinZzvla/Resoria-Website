@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // Producción (dominio propio): SITE_URL=https://resoria.com BASE_PATH=/
 // GitHub Pages: SITE_URL=https://marvinzzvla.github.io BASE_PATH=/Restoria-Website
-const SITE_URL = process.env.SITE_URL ?? 'https://resoria.com';
+const SITE_URL = process.env.SITE_URL ?? 'https://resorias.com';
 const BASE_PATH = process.env.BASE_PATH ?? '/';
 
 export default defineConfig({

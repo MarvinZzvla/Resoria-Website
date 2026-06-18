@@ -11,7 +11,7 @@ export function getContent(locale: string): SiteContent {
   return contentMap[locale] ?? contentMap.es;
 }
 
-export const SITE_URL = 'https://resoria.com';
+export const SITE_URL = 'https://resorias.com';
 
 export function getAlternateUrl(locale: string): string {
   return `${SITE_URL}/${locale}/`;
