@@ -1,4 +1,5 @@
 import type { ProductDetail } from '../types/product-detail';
+import { sitePath } from './assets';
 import easyRestaurantEs from '../content/product-details/es/easy-restaurant.json';
 import miInventarioEs from '../content/product-details/es/mi-inventario.json';
 import easyRestaurantEn from '../content/product-details/en/easy-restaurant.json';
@@ -23,5 +24,5 @@ export function getProductDetail(locale: string, slug: string): ProductDetail | 
 }
 
 export function getProductDetailPath(locale: string, slug: string): string {
-  return `/${locale}/productos/${slug}/`;
+  return sitePath(`${locale}/productos/${slug}/`);
 }

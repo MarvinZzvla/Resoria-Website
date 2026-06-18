@@ -1,4 +1,5 @@
 import type { LegalDocument } from '../types/legal';
+import { sitePath } from './assets';
 import privacyEs from '../content/legal/es/privacy.json';
 import termsEs from '../content/legal/es/terms.json';
 import privacyEn from '../content/legal/en/privacy.json';
@@ -21,8 +22,8 @@ export function getLegalDocument(locale: string, type: 'privacy' | 'terms'): Leg
 
 export function getLegalPaths(locale: string) {
   return locale === 'en'
-    ? { privacy: '/en/privacy/', terms: '/en/terms/' }
-    : { privacy: '/es/privacidad/', terms: '/es/terminos/' };
+    ? { privacy: sitePath('en/privacy/'), terms: sitePath('en/terms/') }
+    : { privacy: sitePath('es/privacidad/'), terms: sitePath('es/terminos/') };
 }
 
 export function getLegalAlternatePaths(type: 'privacy' | 'terms') {

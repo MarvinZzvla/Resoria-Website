@@ -1,4 +1,6 @@
 ---
+import { absoluteUrl, publicAsset } from '../lib/assets';
+
 interface Props {
   title: string;
   description: string;
@@ -22,11 +24,13 @@ const {
 } = Astro.props;
 
 const siteUrl = Astro.site?.href.replace(/\/$/, '') ?? 'https://resoria.com';
-const canonical = canonicalPath ? `${siteUrl}${canonicalPath}` : `${siteUrl}/${locale}/`;
+const canonical = canonicalPath
+  ? absoluteUrl(canonicalPath, siteUrl)
+  : absoluteUrl(`/${locale}/`, siteUrl);
 const alternateUrl = alternatePath
-  ? `${siteUrl}${alternatePath}`
-  : `${siteUrl}/${alternateLocale}/`;
-const ogImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
+  ? absoluteUrl(alternatePath, siteUrl)
+  : absoluteUrl(`/${alternateLocale}/`, siteUrl);
+const ogImageUrl = ogImage.startsWith('http') ? ogImage : absoluteUrl(ogImage, siteUrl);
 ---
 
 <title>{title}</title>

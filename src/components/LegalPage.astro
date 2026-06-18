@@ -1,6 +1,7 @@
 ---
 import type { SiteContent } from '../types/content';
 import type { LegalDocument } from '../types/legal';
+import { sitePath } from '../lib/assets';
 
 interface Props {
   content: SiteContent;
@@ -8,7 +9,7 @@ interface Props {
 }
 
 const { content, document } = Astro.props;
-const homePath = `/${content.locale}/`;
+const homePath = sitePath(`${content.locale}/`);
 const backLabel = content.locale === 'en' ? 'Back to home' : 'Volver al inicio';
 ---
 

@@ -1,4 +1,4 @@
-# build output
+# build output (GitHub Actions genera dist/ al desplegar; no subir a git)
 dist/
 # generated types
 .astro/

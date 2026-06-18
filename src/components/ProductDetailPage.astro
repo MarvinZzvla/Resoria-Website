@@ -1,6 +1,7 @@
 ---
 import type { Product } from '../types/content';
 import type { ProductDetail } from '../types/product-detail';
+import { publicAsset, sitePath } from '../lib/assets';
 import DownloadBadge from './DownloadBadge.astro';
 import YouTubeEmbed from './YouTubeEmbed.astro';
 
@@ -13,7 +14,7 @@ interface Props {
 }
 
 const { product, detail, locale, productsSectionId, contactSectionId } = Astro.props;
-const homePath = `/${locale}/`;
+const homePath = sitePath(`${locale}/`);
 const pricingHref = `${homePath}#${productsSectionId}`;
 const contactHref = `${homePath}#${contactSectionId}`;
 const popularLabel = locale === 'en' ? 'Most popular' : 'Más popular';
@@ -75,7 +76,7 @@ const playLabel = locale === 'en' ? 'Play video' : 'Reproducir video';
       <div class="flex w-full flex-col gap-6 lg:flex-row lg:items-center lg:justify-between lg:gap-10">
         <div class="flex min-w-0 flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-6">
           <img
-            src={product.logo}
+            src={publicAsset(product.logo)}
             alt={product.logoAlt}
             width={product.id === 'easy-restaurant' ? 640 : 280}
             height={product.id === 'easy-restaurant' ? 256 : 112}

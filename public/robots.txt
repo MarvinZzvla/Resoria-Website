@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://resoria.com/sitemap-index.xml

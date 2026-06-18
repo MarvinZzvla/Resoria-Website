@@ -1,3 +1,5 @@
 ---
-return Astro.redirect('/es/');
+import { sitePath } from '../lib/assets';
+
+return Astro.redirect(sitePath('es/'));
 ---

@@ -1,5 +1,6 @@
 ---
 import type { SiteContent } from '../types/content';
+import { publicAsset } from '../lib/assets';
 
 interface Props {
   content: SiteContent;
@@ -22,7 +23,7 @@ const seoHeadline = `${hero.headlinePrefix} ${hero.typewriterWords.join(', ')}`;
       <div class="mb-4 flex flex-col items-center gap-0">
         <div class="leading-[0]">
           <img
-            src="/logos/resoria-transparent.png"
+            src={publicAsset('/logos/resoria-transparent.png')}
             alt={hero.logoAlt}
             width="640"
             height="220"

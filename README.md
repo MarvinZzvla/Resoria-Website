@@ -35,6 +35,12 @@ Landing bilingüe (**español** e **inglés**) con:
 
 Visita la sección de contacto en el sitio para solicitar información, una demo o adquirir una licencia.
 
----
+## Publicación
+
+El sitio se publica en **GitHub Pages**:
+
+**https://marvinzzvla.github.io/Restoria-Website/**
+
+El repositorio no incluye `dist/` (es correcto). GitHub Actions compila y despliega automáticamente al hacer push a `master`.
 
 © Resoria — Easy Restaurant & Mi Inventario

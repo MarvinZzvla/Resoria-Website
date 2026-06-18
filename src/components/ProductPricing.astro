@@ -1,6 +1,7 @@
 ---
 import type { SiteContent } from '../types/content';
 import { getProductDetailPath } from '../lib/product-details';
+import { publicAsset } from '../lib/assets';
 
 interface Props {
   content: SiteContent;
@@ -70,7 +71,7 @@ const trialBtnClass = (accent: keyof typeof accentBtn) =>
           <header class="mb-8 text-center">
             <div class={`leading-[0] ${logoTitleGap[product.id as keyof typeof logoTitleGap]}`}>
               <img
-                src={product.logo}
+                src={publicAsset(product.logo)}
                 alt={product.logoAlt}
                 width={product.id === 'easy-restaurant' ? 640 : 200}
                 height={product.id === 'easy-restaurant' ? 256 : 80}

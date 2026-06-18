@@ -4,11 +4,14 @@ import sitemap from '@astrojs/sitemap';
 
 import tailwindcss from '@tailwindcss/vite';
 
-// Cambia esta URL por tu dominio real antes de desplegar
-const SITE_URL = 'https://resoria.com';
+// Producción (dominio propio): SITE_URL=https://resoria.com BASE_PATH=/
+// GitHub Pages: SITE_URL=https://marvinzzvla.github.io BASE_PATH=/Restoria-Website
+const SITE_URL = process.env.SITE_URL ?? 'https://resoria.com';
+const BASE_PATH = process.env.BASE_PATH ?? '/';
 
 export default defineConfig({
   site: SITE_URL,
+  base: BASE_PATH,
   output: 'static',
   integrations: [sitemap()],
 
