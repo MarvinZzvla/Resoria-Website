@@ -16,8 +16,8 @@ Software de control de stock para tiendas, bodegas, ferreterías, farmacias y al
 
 Cada producto está disponible en dos formatos:
 
-- **Licencia de por vida** — pago único, instalación en tu equipo
-- **SaaS mensual** — acceso desde cualquier dispositivo, actualizaciones incluidas
+- **Pago único** — un solo pago, instalación en tu equipo
+- **Pago mensual** — acceso desde cualquier dispositivo, actualizaciones incluidas
 
 También ofrecemos **prueba gratuita de 15 días** para que conozcas el software antes de comprar.
 
@@ -27,13 +27,13 @@ Landing bilingüe (**español** e **inglés**) con:
 
 - Presentación de productos y precios
 - Páginas de detalle con beneficios, tutoriales y casos de éxito
-- Comparativa entre licencia y suscripción
+- Comparativa entre pago único y pago mensual
 - Formulario de contacto y métodos de pago
 - Política de privacidad y términos de uso
 
 ## Contacto
 
-Visita la sección de contacto en el sitio para solicitar información, una demo o adquirir una licencia.
+Visita la sección de contacto en el sitio para solicitar información, una demo o adquirir un plan.
 
 ## Publicación
 

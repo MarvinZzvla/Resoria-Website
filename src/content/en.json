@@ -4,12 +4,12 @@
   "alternateLocale": "es",
   "seo": {
     "title": "Resoria — Restaurant & Inventory Software | Easy Restaurant & Mi Inventario",
-    "description": "Resoria builds simple software for restaurants and inventory management. Choose a lifetime license or monthly SaaS subscription. Easy Restaurant & Mi Inventario.",
+    "description": "Resoria builds simple software for restaurants and inventory management. Choose one-time or monthly payment. Easy Restaurant & Mi Inventario.",
     "ogImageAlt": "Resoria Software Solutions — Easy Restaurant and Mi Inventario"
   },
   "nav": {
     "products": "Products",
-    "licenses": "Licenses",
+    "licenses": "Plans",
     "success": "Success stories",
     "contact": "Buy",
     "langSwitch": "ES"
@@ -41,9 +41,9 @@
       "plans": [
         {
           "id": "lifetime",
-          "name": "Lifetime license",
-          "price": "$299",
-          "period": "one-time USD",
+          "name": "One-time payment",
+          "price": "$500",
+          "period": "USD",
           "features": [
             "Install on your own device",
             "Unlimited users",
@@ -53,8 +53,8 @@
         },
         {
           "id": "saas",
-          "name": "Monthly SaaS",
-          "price": "$29",
+          "name": "Monthly payment",
+          "price": "$35",
           "period": "USD / month",
           "popular": true,
           "features": [
@@ -78,9 +78,9 @@
       "plans": [
         {
           "id": "lifetime",
-          "name": "Lifetime license",
-          "price": "$249",
-          "period": "one-time USD",
+          "name": "One-time payment",
+          "price": "$300",
+          "period": "USD",
           "features": [
             "Install on your own device",
             "Unlimited products",
@@ -90,8 +90,8 @@
         },
         {
           "id": "saas",
-          "name": "Monthly SaaS",
-          "price": "$24",
+          "name": "Monthly payment",
+          "price": "$20",
           "period": "USD / month",
           "popular": true,
           "features": [
@@ -106,10 +106,10 @@
   ],
   "compareSection": {
     "id": "licencias",
-    "title": "Lifetime license or SaaS?",
+    "title": "One-time or monthly payment?",
     "subtitle": "Compare both options and pick the one that fits your business.",
-    "lifetimeLabel": "Lifetime",
-    "saasLabel": "SaaS",
+    "lifetimeLabel": "One-time payment",
+    "saasLabel": "Monthly payment",
     "rows": [
       {
         "aspect": "Payment",
@@ -139,33 +139,27 @@
     "subtitle": "Businesses already trusting Resoria software.",
     "stories": [
       {
-        "videoId": "dQw4w9WgXcQ",
-        "title": "La Esquina Restaurant",
-        "quote": "With Easy Restaurant we reduced order errors and service is much faster.",
-        "author": "María G., restaurant owner"
+        "videoId": "We3rdSxrWjY",
+        "title": "Rinconcito Encantador",
+        "quote": "With Easy Restaurant we manage tables, orders and kitchen in one place. Service runs much smoother.",
+        "author": "Josue Ruiz, General Manager"
       },
       {
-        "videoId": "dQw4w9WgXcQ",
-        "title": "El Ahorro Store",
-        "quote": "Mi Inventario helped us know exactly which products to restock every week.",
-        "author": "Carlos R., store manager"
-      },
-      {
-        "videoId": "dQw4w9WgXcQ",
-        "title": "Café Central",
-        "quote": "The SaaS plan let us start without a big upfront investment. Highly recommended.",
-        "author": "Ana L., entrepreneur"
+        "videoId": "2zifDAwHaIQ",
+        "title": "Distribuidora Cristal",
+        "quote": "Mi Inventario gives us clear stock control and helps us restock every product on time.",
+        "author": "Frederick Pavón, Owner"
       }
     ]
   },
   "contactSection": {
     "id": "contacto",
     "title": "How to buy",
-    "subtitle": "Three simple steps to get your license.",
+    "subtitle": "Three simple steps to get your software.",
     "steps": [
       {
         "title": "1. Choose",
-        "description": "Select the product and plan (lifetime or SaaS) that works for you."
+        "description": "Select the product and plan (one-time or monthly payment) that works for you."
       },
       {
         "title": "2. Contact us",
@@ -173,7 +167,7 @@
       },
       {
         "title": "3. Pay",
-        "description": "Pay via PayPal, bank transfer, or cash. We activate your license upon confirmation."
+        "description": "Pay via PayPal, bank transfer, or cash. We activate your access upon confirmation."
       }
     ],
     "form": {
@@ -191,8 +185,8 @@
       ],
       "planOptions": [
         { "value": "", "label": "Select a plan" },
-        { "value": "lifetime", "label": "Lifetime license" },
-        { "value": "saas", "label": "Monthly SaaS" }
+        { "value": "lifetime", "label": "One-time payment" },
+        { "value": "saas", "label": "Monthly payment" }
       ]
     },
     "contactInfo": {

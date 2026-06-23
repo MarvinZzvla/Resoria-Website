@@ -19,9 +19,11 @@ export interface ProductDetailTutorial {
 
 export interface ProductDetailStory {
   videoId: string;
-  quote: string;
   author: string;
   business: string;
+  intro: string;
+  quote: string;
+  closing?: string;
 }
 
 export interface ProductDetailBenefit {

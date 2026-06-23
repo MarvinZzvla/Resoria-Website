@@ -45,15 +45,11 @@ const titleOffset = {
 const learnMoreClass = (accent: keyof typeof accentBtn) =>
   `learn-more-neon learn-more-neon--${accent}`;
 
-function isDownloadReady(url: string): boolean {
-  return Boolean(url) && url !== '#' && !url.startsWith('#');
-}
-
 const trialBtnClass = (accent: keyof typeof accentBtn) =>
-  `inline-flex w-full cursor-pointer select-none items-center justify-center rounded-xl bg-gradient-to-r px-5 py-3 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97] active:brightness-95 ${accentBtn[accent]}`;
+  `inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r px-5 py-3 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97] active:brightness-95 ${accentBtn[accent]}`;
 ---
 
-<section id={productsSection.id} class="pt-4 pb-12 md:pt-6 md:pb-14" aria-labelledby="products-heading">
+<section id={productsSection.id} class="pt-4 pb-0 md:pt-6" aria-labelledby="products-heading">
   <div class="mx-auto w-[min(1120px,92vw)]">
     <header class="mb-8 text-center" data-animate>
       <h2 id="products-heading" class="mb-3 text-3xl font-bold md:text-4xl">{productsSection.title}</h2>
@@ -122,20 +118,12 @@ const trialBtnClass = (accent: keyof typeof accentBtn) =>
                     </li>
                   ))}
                 </ul>
-                {isDownloadReady(product.downloadUrl) ? (
-                  <a
-                    href={product.downloadUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class={trialBtnClass(product.accent)}
-                  >
-                    {productsSection.trialCta}
-                  </a>
-                ) : (
-                  <button type="button" class={trialBtnClass(product.accent)}>
-                    {productsSection.trialCta}
-                  </button>
-                )}
+                <a
+                  href={getProductDetailPath(content.locale, product.id)}
+                  class={trialBtnClass(product.accent)}
+                >
+                  {productsSection.trialCta}
+                </a>
               </div>
             ))}
           </div>

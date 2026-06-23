@@ -244,6 +244,40 @@ const playLabel = locale === 'en' ? 'Play video' : 'Reproducir video';
     </div>
   </section>
 
+  <!-- Historia de éxito -->
+  <section class="border-t border-white/10 py-12 md:py-16" aria-labelledby="product-success-heading">
+    <div class="mx-auto w-[min(1120px,92vw)]">
+      <header class="mb-10 text-center" data-animate>
+        <h2 id="product-success-heading" class="text-2xl font-bold md:text-3xl">
+          {detail.successStories.title}
+        </h2>
+      </header>
+
+      {detail.successStories.items.map((story, i) => (
+        <article
+          class="mx-auto grid max-w-5xl gap-8 overflow-hidden rounded-2xl border border-white/10 bg-resoria-card p-5 shadow-xl shadow-black/25 transition-all duration-300 hover:border-white/20 sm:p-6 lg:grid-cols-[minmax(240px,300px)_1fr] lg:items-start lg:gap-10"
+          data-animate
+          style={`--delay: ${i * 0.08}s`}
+        >
+          <div class="mx-auto w-full max-w-[280px] lg:mx-0">
+            <YouTubeEmbed videoId={story.videoId} title={story.business} playLabel={playLabel} aspect="short" />
+          </div>
+          <div class="text-center lg:text-left">
+            <h3 class="mb-4 text-xl font-semibold md:text-2xl">{story.business}</h3>
+            <p class="mb-5 text-sm leading-relaxed text-resoria-muted md:text-base">{story.intro}</p>
+            <blockquote class="mb-5 border-l-2 border-resoria-blue/60 pl-4">
+              <p class="text-base leading-relaxed text-[#f0f0f5] italic md:text-lg">&ldquo;{story.quote}&rdquo;</p>
+            </blockquote>
+            {story.closing && (
+              <p class="mb-5 text-sm leading-relaxed text-resoria-muted md:text-base">{story.closing}</p>
+            )}
+            <p class="text-sm font-medium text-resoria-silver">&mdash; {story.author}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
   <!-- Tutoriales -->
   <section class="border-t border-white/10 bg-resoria-card/50 py-12 md:py-14" aria-labelledby="tutorials-heading">
     <div class="mx-auto w-[min(1120px,92vw)]">
@@ -261,31 +295,6 @@ const playLabel = locale === 'en' ? 'Play video' : 'Reproducir video';
             <div class="p-4">
               <h3 class="font-semibold">{tutorial.title}</h3>
               <p class="mt-1 text-sm text-resoria-dim">{tutorial.duration}</p>
-            </div>
-          </article>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- Casos de éxito -->
-  <section class="py-12 md:py-14" aria-labelledby="product-success-heading">
-    <div class="mx-auto w-[min(1120px,92vw)]">
-      <h2 id="product-success-heading" class="mb-8 text-center text-2xl font-bold md:text-3xl" data-animate>
-        {detail.successStories.title}
-      </h2>
-      <div class="grid gap-6 md:grid-cols-2">
-        {detail.successStories.items.map((story, i) => (
-          <article
-            class="overflow-hidden rounded-xl border border-white/10 bg-resoria-card transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-xl hover:shadow-black/30"
-            data-animate
-            style={`--delay: ${i * 0.08}s`}
-          >
-            <YouTubeEmbed videoId={story.videoId} title={story.business} playLabel={playLabel} />
-            <div class="p-5">
-              <h3 class="mb-2 text-lg font-semibold">{story.business}</h3>
-              <p class="text-sm text-resoria-muted">{story.quote}</p>
-              <p class="mt-2 text-xs text-resoria-silver">&mdash; {story.author}</p>
             </div>
           </article>
         ))}

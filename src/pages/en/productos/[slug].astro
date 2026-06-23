@@ -9,7 +9,7 @@ export function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-const content = getContent('en');
+const content = await getContent('en');
 const detail = getProductDetail('en', slug!);
 
 if (!detail) {

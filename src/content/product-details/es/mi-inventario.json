@@ -130,19 +130,15 @@
     ]
   },
   "successStories": {
-    "title": "Casos de éxito",
+    "title": "Historia de éxito",
     "items": [
       {
-        "videoId": "dQw4w9WgXcQ",
-        "quote": "Ahora sabemos exactamente qué reponer cada semana. Se acabaron las sorpresas de productos agotados.",
-        "author": "Carlos Ríos",
-        "business": "Bodega El Ahorro"
-      },
-      {
-        "videoId": "dQw4w9WgXcQ",
-        "quote": "El control de stock en nuestra ferretería mejoró muchísimo. Los reportes nos ahorran horas cada mes.",
-        "author": "Ana Lucía",
-        "business": "Ferretería El Tornillo"
+        "videoId": "2zifDAwHaIQ",
+        "business": "Distribuidora Cristal",
+        "author": "Frederick Pavón, Propietario",
+        "intro": "En Masatepe instalamos Mi Inventario en Distribuidora Cristal, un negocio que prioriza la calidad con sus clientes. Tras 30 minutos de capacitación, el propietario ya factura con atajos de teclado o lector de código de barras e imprime la factura física cuando el cliente la necesita.",
+        "quote": "Antes llevaba finanzas, inventario y facturas en un cuaderno. Ahora lo vamos a manejar al 100% con Mi Inventario. Tendremos el control exacto de ventas, inventarios y ganancias sin buscar papeles ni cuadernos: todo digital, a la palma de la mano.",
+        "closing": "Sí, la recomiendo. Así llevamos el inventario exacto de lo más pequeño a lo más grande, con un control completamente exacto y satisfactorio para nosotros y para nuestros clientes."
       }
     ]
   },

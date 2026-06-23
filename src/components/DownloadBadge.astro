@@ -11,28 +11,60 @@ function isDownloadReady(url: string): boolean {
   return Boolean(url) && url !== '#' && !url.startsWith('#');
 }
 
-const badgeClass =
-  'inline-flex cursor-pointer select-none items-center gap-3 rounded-xl border border-white/20 bg-gradient-to-b from-[#1a1a24] to-[#0d0d12] px-5 py-2.5 text-white shadow-[0_4px_20px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.1)] transition-all duration-200 hover:-translate-y-0.5 hover:border-resoria-blue/40 hover:shadow-[0_8px_28px_rgba(0,168,255,0.25)] active:translate-y-0 active:scale-[0.97]';
+const ready = isDownloadReady(downloadUrl);
+const sharedProps = {
+  class: 'download-gift-badge',
+};
 ---
 
-{isDownloadReady(downloadUrl) ? (
-  <a href={downloadUrl} target="_blank" rel="noopener noreferrer" class={badgeClass}>
-    <svg class="h-8 w-8 shrink-0 text-resoria-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4 4m0 0l-4-4m4 4V4" />
-    </svg>
-    <span class="flex flex-col items-start leading-none">
-      <span class="text-[11px] font-medium tracking-wide text-resoria-muted">{label}</span>
-      <span class="mt-0.5 text-lg font-bold tracking-tight">{sublabel}</span>
-    </span>
-  </a>
-) : (
-  <button type="button" class={badgeClass}>
-    <svg class="h-8 w-8 shrink-0 text-resoria-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4 4m0 0l-4-4m4 4V4" />
-    </svg>
-    <span class="flex flex-col items-start leading-none">
-      <span class="text-[11px] font-medium tracking-wide text-resoria-muted">{label}</span>
-      <span class="mt-0.5 text-lg font-bold tracking-tight">{sublabel}</span>
-    </span>
-  </button>
-)}
+{
+  ready ? (
+    <a href={downloadUrl} target="_blank" rel="noopener noreferrer" {...sharedProps}>
+      <span class="download-gift-badge__glow" aria-hidden="true"></span>
+      <span class="download-gift-badge__gift" aria-hidden="true">
+        <svg class="download-gift-badge__svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect class="download-gift-badge__box" x="5" y="14" width="22" height="14" rx="1.5" fill="currentColor" opacity="0.9" />
+          <rect class="download-gift-badge__ribbon-v" x="14.25" y="14" width="3.5" height="14" fill="white" opacity="0.35" />
+          <g class="download-gift-badge__lid-group">
+            <rect class="download-gift-badge__lid" x="4" y="10" width="24" height="5" rx="1.5" fill="currentColor" />
+            <rect x="14.25" y="10" width="3.5" height="5" fill="white" opacity="0.35" />
+            <path
+              class="download-gift-badge__bow"
+              d="M16 10c-2.2 0-4-1.2-4-3.2C12 5.2 13.6 4 16 4c2.4 0 4 1.2 4 2.8C20 8.8 18.2 10 16 10Z"
+              fill="currentColor"
+            />
+            <path d="M16 7.5c-1.2-1.8-3.5-2-4.8-.8M16 7.5c1.2-1.8 3.5-2 4.8-.8" stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.5" />
+          </g>
+        </svg>
+      </span>
+      <span class="download-gift-badge__text">
+        <span class="download-gift-badge__label">{label}</span>
+        <span class="download-gift-badge__sublabel">{sublabel}</span>
+      </span>
+    </a>
+  ) : (
+    <button type="button" {...sharedProps}>
+      <span class="download-gift-badge__glow" aria-hidden="true"></span>
+      <span class="download-gift-badge__gift" aria-hidden="true">
+        <svg class="download-gift-badge__svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect class="download-gift-badge__box" x="5" y="14" width="22" height="14" rx="1.5" fill="currentColor" opacity="0.9" />
+          <rect class="download-gift-badge__ribbon-v" x="14.25" y="14" width="3.5" height="14" fill="white" opacity="0.35" />
+          <g class="download-gift-badge__lid-group">
+            <rect class="download-gift-badge__lid" x="4" y="10" width="24" height="5" rx="1.5" fill="currentColor" />
+            <rect x="14.25" y="10" width="3.5" height="5" fill="white" opacity="0.35" />
+            <path
+              class="download-gift-badge__bow"
+              d="M16 10c-2.2 0-4-1.2-4-3.2C12 5.2 13.6 4 16 4c2.4 0 4 1.2 4 2.8C20 8.8 18.2 10 16 10Z"
+              fill="currentColor"
+            />
+            <path d="M16 7.5c-1.2-1.8-3.5-2-4.8-.8M16 7.5c1.2-1.8 3.5-2 4.8-.8" stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.5" />
+          </g>
+        </svg>
+      </span>
+      <span class="download-gift-badge__text">
+        <span class="download-gift-badge__label">{label}</span>
+        <span class="download-gift-badge__sublabel">{sublabel}</span>
+      </span>
+    </button>
+  )
+}

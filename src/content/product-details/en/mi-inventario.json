@@ -130,19 +130,15 @@
     ]
   },
   "successStories": {
-    "title": "Success stories",
+    "title": "Success story",
     "items": [
       {
-        "videoId": "dQw4w9WgXcQ",
-        "quote": "We now know exactly what to restock every week. No more surprise stockouts.",
-        "author": "Carlos Ríos",
-        "business": "El Ahorro Store"
-      },
-      {
-        "videoId": "dQw4w9WgXcQ",
-        "quote": "Stock control in our hardware store improved a lot. Reports save us hours every month.",
-        "author": "Ana Lucía",
-        "business": "El Tornillo Hardware"
+        "videoId": "2zifDAwHaIQ",
+        "business": "Distribuidora Cristal",
+        "author": "Frederick Pavón, Owner",
+        "intro": "In Masatepe we installed Mi Inventario at Distribuidora Cristal, a business focused on quality for its customers. After 30 minutes of training, the owner was already invoicing with keyboard shortcuts or a barcode scanner and printing a physical receipt when the customer needs one.",
+        "quote": "I used to track finances, inventory and invoices in a notebook. Now we will run everything 100% with Mi Inventario. We will have exact control of sales, stock and profits without digging through papers or notebooks — everything digital, right at our fingertips.",
+        "closing": "Yes, I would recommend it. This way we keep exact inventory from the smallest item to the largest, with full control that works for us and for our customers."
       }
     ]
   },

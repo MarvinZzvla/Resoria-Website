@@ -7,13 +7,13 @@ import SuccessStories from '../../components/SuccessStories.astro';
 import ContactBuy from '../../components/ContactBuy.astro';
 import { getContent } from '../../lib/content';
 
-const content = getContent('en');
+const content = await getContent('en');
 ---
 
 <BaseLayout content={content}>
   <Hero content={content} />
   <ProductPricing content={content} />
-  <LicenseCompare content={content} />
   <SuccessStories content={content} />
+  <LicenseCompare content={content} />
   <ContactBuy content={content} />
 </BaseLayout>

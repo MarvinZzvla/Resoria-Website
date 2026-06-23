@@ -4,12 +4,12 @@
   "alternateLocale": "en",
   "seo": {
     "title": "Resoria — Software para restaurantes e inventarios | Easy Restaurant & Mi Inventario",
-    "description": "Resoria crea software simple para restaurantes e inventarios. Elige licencia de por vida o suscripción SaaS. Easy Restaurant y Mi Inventario.",
+    "description": "Resoria crea software simple para restaurantes e inventarios. Elige pago único o pago mensual. Easy Restaurant y Mi Inventario.",
     "ogImageAlt": "Resoria Software Solutions — Easy Restaurant y Mi Inventario"
   },
   "nav": {
     "products": "Productos",
-    "licenses": "Licencias",
+    "licenses": "Modalidades",
     "success": "Casos de éxito",
     "contact": "Comprar",
     "langSwitch": "EN"
@@ -41,9 +41,9 @@
       "plans": [
         {
           "id": "lifetime",
-          "name": "Licencia de por vida",
-          "price": "$299",
-          "period": "pago único USD",
+          "name": "Pago único",
+          "price": "$500",
+          "period": "USD",
           "features": [
             "Instalación en tu equipo",
             "Sin límite de usuarios",
@@ -53,8 +53,8 @@
         },
         {
           "id": "saas",
-          "name": "SaaS mensual",
-          "price": "$29",
+          "name": "Pago mensual",
+          "price": "$35",
           "period": "USD / mes",
           "popular": true,
           "features": [
@@ -78,9 +78,9 @@
       "plans": [
         {
           "id": "lifetime",
-          "name": "Licencia de por vida",
-          "price": "$249",
-          "period": "pago único USD",
+          "name": "Pago único",
+          "price": "$300",
+          "period": "USD",
           "features": [
             "Instalación en tu equipo",
             "Productos ilimitados",
@@ -90,8 +90,8 @@
         },
         {
           "id": "saas",
-          "name": "SaaS mensual",
-          "price": "$24",
+          "name": "Pago mensual",
+          "price": "$20",
           "period": "USD / mes",
           "popular": true,
           "features": [
@@ -106,10 +106,10 @@
   ],
   "compareSection": {
     "id": "licencias",
-    "title": "¿Licencia de por vida o SaaS?",
+    "title": "¿Pago único o pago mensual?",
     "subtitle": "Compara las dos modalidades y elige la que mejor se adapte a tu negocio.",
-    "lifetimeLabel": "Por vida",
-    "saasLabel": "SaaS",
+    "lifetimeLabel": "Pago único",
+    "saasLabel": "Pago mensual",
     "rows": [
       {
         "aspect": "Pago",
@@ -139,33 +139,27 @@
     "subtitle": "Negocios que ya confían en el software de Resoria.",
     "stories": [
       {
-        "videoId": "dQw4w9WgXcQ",
-        "title": "Restaurante La Esquina",
-        "quote": "Con Easy Restaurant redujimos los errores en pedidos y el servicio es mucho más rápido.",
-        "author": "María G., dueña de restaurante"
+        "videoId": "We3rdSxrWjY",
+        "title": "Rinconcito Encantador",
+        "quote": "Con Easy Restaurant organizamos mesas, pedidos y cocina en un solo lugar. El servicio fluye mucho mejor.",
+        "author": "Josue Ruiz, Gerente General"
       },
       {
-        "videoId": "dQw4w9WgXcQ",
-        "title": "Bodega El Ahorro",
-        "quote": "Mi Inventario nos ayudó a saber exactamente qué productos reponer cada semana.",
-        "author": "Carlos R., gerente de tienda"
-      },
-      {
-        "videoId": "dQw4w9WgXcQ",
-        "title": "Café Central",
-        "quote": "La modalidad SaaS nos permitió empezar sin una inversión grande. Muy recomendado.",
-        "author": "Ana L., emprendedora"
+        "videoId": "2zifDAwHaIQ",
+        "title": "Distribuidora Cristal",
+        "quote": "Mi Inventario nos permite controlar el stock con claridad y reponer a tiempo cada producto.",
+        "author": "Frederick Pavón, Propietario"
       }
     ]
   },
   "contactSection": {
     "id": "contacto",
     "title": "¿Cómo comprar?",
-    "subtitle": "Tres pasos simples para obtener tu licencia.",
+    "subtitle": "Tres pasos simples para obtener tu software.",
     "steps": [
       {
         "title": "1. Elige",
-        "description": "Selecciona el producto y la modalidad (por vida o SaaS) que prefieras."
+        "description": "Selecciona el producto y la modalidad (pago único o pago mensual) que prefieras."
       },
       {
         "title": "2. Contáctanos",
@@ -173,7 +167,7 @@
       },
       {
         "title": "3. Paga",
-        "description": "Realiza el pago por PayPal, transferencia bancaria o efectivo. Activamos tu licencia al confirmar."
+        "description": "Realiza el pago por PayPal, transferencia bancaria o efectivo. Activamos tu acceso al confirmar."
       }
     ],
     "form": {
@@ -191,8 +185,8 @@
       ],
       "planOptions": [
         { "value": "", "label": "Selecciona modalidad" },
-        { "value": "lifetime", "label": "Licencia de por vida" },
-        { "value": "saas", "label": "SaaS mensual" }
+        { "value": "lifetime", "label": "Pago único" },
+        { "value": "saas", "label": "Pago mensual" }
       ]
     },
     "contactInfo": {

@@ -130,19 +130,15 @@
     ]
   },
   "successStories": {
-    "title": "Success stories",
+    "title": "Success story",
     "items": [
       {
-        "videoId": "dQw4w9WgXcQ",
-        "quote": "We cut order errors by 40% and service is noticeably faster.",
-        "author": "María González",
-        "business": "La Esquina Restaurant"
-      },
-      {
-        "videoId": "dQw4w9WgXcQ",
-        "quote": "Within a week everything was running. The team learned it without long training.",
-        "author": "Carlos Méndez",
-        "business": "Café Central"
+        "videoId": "We3rdSxrWjY",
+        "business": "Rinconcito Encantador",
+        "author": "Josue Ruiz, General Manager",
+        "intro": "In Masaya we installed Easy Restaurant at Rinconcito Encantador, a two-story restaurant. Setup took only a few minutes and, after 30 minutes of training, the team was taking orders on tablets, sending tickets to the kitchen and billing at the register with a thermal printer when guests ask for the check.",
+        "quote": "It has helped me perform better, support my staff so they can send orders more easily and make sure customers are not delayed waiting for their food at the table.",
+        "closing": "The system is easy to understand, easy to install and quick to learn. If you want order across tables, kitchen tickets and checkout, this is your system."
       }
     ]
   },

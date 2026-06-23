@@ -3,14 +3,17 @@ interface Props {
   videoId: string;
   title: string;
   playLabel?: string;
+  aspect?: 'video' | 'short' | 'square';
 }
 
-const { videoId, title, playLabel = 'Reproducir video' } = Astro.props;
+const { videoId, title, playLabel = 'Reproducir video', aspect = 'video' } = Astro.props;
 const thumbSrc = `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
 const embedSrc = `https://www.youtube-nocookie.com/embed/${videoId}`;
+const aspectClass =
+  aspect === 'short' ? 'aspect-[9/16]' : aspect === 'square' ? 'aspect-square' : 'aspect-video';
 ---
 
-<div class="relative aspect-video bg-resoria-elevated">
+<div class={`relative ${aspectClass} bg-resoria-elevated`}>
   <button
     type="button"
     class="youtube-embed group absolute inset-0 h-full w-full cursor-pointer overflow-hidden border-0 p-0"

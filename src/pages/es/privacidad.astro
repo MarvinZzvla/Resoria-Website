@@ -4,7 +4,7 @@ import LegalPage from '../../components/LegalPage.astro';
 import { getContent } from '../../lib/content';
 import { getLegalAlternatePaths, getLegalDocument } from '../../lib/legal';
 
-const content = getContent('es');
+const content = await getContent('es');
 const document = getLegalDocument('es', 'privacy');
 const alternate = getLegalAlternatePaths('privacy');
 ---

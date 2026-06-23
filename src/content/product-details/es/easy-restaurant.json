@@ -130,19 +130,15 @@
     ]
   },
   "successStories": {
-    "title": "Casos de éxito",
+    "title": "Historia de éxito",
     "items": [
       {
-        "videoId": "dQw4w9WgXcQ",
-        "quote": "Redujimos los errores en pedidos un 40% y el servicio es notablemente más rápido.",
-        "author": "María González",
-        "business": "Restaurante La Esquina"
-      },
-      {
-        "videoId": "dQw4w9WgXcQ",
-        "quote": "En una semana ya teníamos todo funcionando. El equipo lo aprendió sin capacitación larga.",
-        "author": "Carlos Méndez",
-        "business": "Café Central"
+        "videoId": "We3rdSxrWjY",
+        "business": "Rinconcito Encantador",
+        "author": "Josue Ruiz, Gerente General",
+        "intro": "En Masaya instalamos Easy Restaurant en Rinconcito Encantador, un restaurante de dos plantas. La instalación tomó unos minutos y, tras 30 minutos de capacitación, el equipo ya comanda desde tablet, envía pedidos a cocina y factura en caja con impresora térmica cuando el cliente pide la cuenta.",
+        "quote": "Me ha ayudado a facilitar mejor mi desempeño, a apoyar a mis trabajadores para que comanden las órdenes con más facilidad y a que los clientes no tengan ningún retraso cuando esperan su comida en la mesa.",
+        "closing": "El sistema es fácil de entender, de instalar y con un entrenamiento rápido. Si buscas orden en mesas, comandas y caja, este es tu sistema."
       }
     ]
   },
