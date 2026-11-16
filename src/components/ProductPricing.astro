@@ -9,44 +9,42 @@ interface Props {
 
 const { content } = Astro.props;
 const { productsSection, products } = content;
-const popularLabel = content.lang === 'es' ? 'Más popular' : 'Most popular';
 
 const accentBorder = {
   orange: 'border-t-resoria-orange',
   emerald: 'border-t-resoria-emerald',
-} as const;
-
-const accentBtn = {
-  orange: 'from-resoria-orange to-resoria-orange-dark hover:shadow-[0_8px_32px_rgba(249,115,22,0.25)]',
-  emerald: 'from-resoria-emerald to-resoria-emerald-dark hover:shadow-[0_8px_32px_rgba(16,185,129,0.25)]',
-} as const;
-
-const accentCheck = {
-  orange: 'text-resoria-orange',
-  emerald: 'text-resoria-emerald',
+  violet: 'border-t-resoria-violet',
 } as const;
 
 const logoClass = {
   'easy-restaurant':
     'mx-auto block h-56 w-auto sm:h-64 md:h-72',
   'mi-inventario': 'mx-auto block max-h-24 w-auto sm:max-h-28',
+  'audit-soft': 'mx-auto block max-h-28 w-auto sm:max-h-32 md:max-h-36',
 } as const;
 
 const logoTitleGap = {
   'easy-restaurant': '-mb-12 sm:-mb-16 md:-mb-20',
   'mi-inventario': 'mb-4',
+  'audit-soft': 'mb-4',
 } as const;
 
 const titleOffset = {
   'easy-restaurant': '-mt-4 sm:-mt-6',
   'mi-inventario': '',
+  'audit-soft': '',
 } as const;
 
-const learnMoreClass = (accent: keyof typeof accentBtn) =>
-  `learn-more-neon learn-more-neon--${accent}`;
+const logoDimensions = {
+  'easy-restaurant': { width: 640, height: 256 },
+  'mi-inventario': { width: 200, height: 80 },
+  'audit-soft': { width: 280, height: 280 },
+} as const;
 
-const trialBtnClass = (accent: keyof typeof accentBtn) =>
-  `inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r px-5 py-3 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97] active:brightness-95 ${accentBtn[accent]}`;
+const logoHasTitle = new Set(['easy-restaurant', 'audit-soft']);
+
+const learnMoreClass = (accent: keyof typeof accentBorder) =>
+  `learn-more-neon learn-more-neon--${accent}`;
 ---
 
 <section id={productsSection.id} class="pt-4 pb-0 md:pt-6" aria-labelledby="products-heading">
@@ -69,14 +67,14 @@ const trialBtnClass = (accent: keyof typeof accentBtn) =>
               <img
                 src={publicAsset(product.logo)}
                 alt={product.logoAlt}
-                width={product.id === 'easy-restaurant' ? 640 : 200}
-                height={product.id === 'easy-restaurant' ? 256 : 80}
+                width={logoDimensions[product.id as keyof typeof logoDimensions]?.width ?? 200}
+                height={logoDimensions[product.id as keyof typeof logoDimensions]?.height ?? 80}
                 loading="lazy"
                 decoding="async"
                 class={logoClass[product.id as keyof typeof logoClass]}
               />
             </div>
-            {product.id === 'easy-restaurant' ? (
+            {logoHasTitle.has(product.id) ? (
               <h3 id={`product-${product.id}-title`} class="sr-only">{product.name}</h3>
             ) : (
               <h3
@@ -94,39 +92,6 @@ const trialBtnClass = (accent: keyof typeof accentBtn) =>
               <span class="learn-more-neon__arrow" aria-hidden="true">→</span>
             </a>
           </header>
-
-          <div class="grid gap-5 sm:grid-cols-2">
-            {product.plans.map((plan) => (
-              <div
-                class={`relative flex flex-col rounded-xl border bg-resoria-elevated p-6 transition-all duration-300 hover:-translate-y-1 ${plan.popular ? 'border-resoria-blue/60 shadow-lg shadow-resoria-blue/10' : 'border-white/10 hover:border-white/20'}`}
-              >
-                {plan.popular && (
-                  <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-resoria-blue to-resoria-blue-dark px-4 py-1 text-xs font-semibold text-white whitespace-nowrap">
-                    {popularLabel}
-                  </span>
-                )}
-                <h4 class="mt-2 text-lg font-semibold">{plan.name}</h4>
-                <p class="my-4">
-                  <span class="block text-4xl font-bold leading-none">{plan.price}</span>
-                  <span class="mt-1 block text-sm text-resoria-muted">{plan.period}</span>
-                </p>
-                <ul class="mb-6 flex-1 space-y-2">
-                  {plan.features.map((feature) => (
-                    <li class="flex gap-2 text-sm text-resoria-muted">
-                      <span class={`shrink-0 font-bold ${accentCheck[product.accent]}`}>✓</span>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href={getProductDetailPath(content.locale, product.id)}
-                  class={trialBtnClass(product.accent)}
-                >
-                  {productsSection.trialCta}
-                </a>
-              </div>
-            ))}
-          </div>
         </article>
       ))}
     </div>

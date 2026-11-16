@@ -1,0 +1,161 @@
+{
+  "slug": "audit-soft",
+  "seo": {
+    "title": "AuditSoft — Software de auditoría | Resoria",
+    "description": "Conoce AuditSoft: planificación, documentación y seguimiento de auditorías. Capturas, tutoriales y casos de éxito."
+  },
+  "heroGif": "https://media.giphy.com/media/l0MYC0LajbaPoEADu/giphy.gif",
+  "backLabel": "Volver a productos",
+  "whatIs": {
+    "title": "¿Qué es AuditSoft?",
+    "paragraphs": [
+      "AuditSoft es un sistema para planificar, ejecutar y documentar auditorías internas y externas con orden y trazabilidad.",
+      "Centraliza checklists, hallazgos, evidencias y planes de acción para que tu equipo cumpla plazos, normas y estándares sin depender de hojas sueltas o carpetas dispersas."
+    ]
+  },
+  "whoIsItFor": {
+    "title": "¿Para quién sirve?",
+    "headlinePrefix": "Sistema para tu",
+    "typewriterWords": ["Auditoría", "Contabilidad", "Compliance", "Finanzas", "Consultoría", "PYME", "Despacho"],
+    "subtitle": "Si necesitas documentar auditorías con claridad, dar seguimiento a hallazgos y entregar informes a tiempo, AuditSoft es tu solución."
+  },
+  "benefits": {
+    "title": "¿Cómo te puede beneficiar?",
+    "items": [
+      {
+        "title": "Auditorías simples de realizar",
+        "description": "Una interfaz clara para revisar registros, validar o rechazar evidencias y finalizar la auditoría sin complicaciones.",
+        "image": "/images/audit-soft/auditoria.jpg",
+        "imageAlt": "Persona usando AuditSoft para realizar una auditoría de forma simple"
+      },
+      {
+        "title": "Hallazgos con seguimiento",
+        "description": "Registra observaciones, asigna responsables y controla el avance de cada plan de acción hasta su cierre.",
+        "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&auto=format&fit=crop",
+        "imageAlt": "Equipo revisando hallazgos en una reunión de trabajo"
+      },
+      {
+        "title": "Evidencias centralizadas",
+        "description": "Adjunta documentos, capturas y notas en un solo lugar. Todo queda vinculado al punto auditado correspondiente.",
+        "image": "/images/audit-soft/evidencias.jpg",
+        "imageAlt": "Evidencias centralizadas en AuditSoft desde escritorio, móvil y documentos físicos"
+      },
+      {
+        "title": "Informes listos para entregar",
+        "description": "Genera reportes claros con el detalle que necesitas para clientes, socios o comités de auditoría.",
+        "image": "/images/audit-soft/informes.jpg",
+        "imageAlt": "Informe de auditoría de AuditSoft listo para entregar en una reunión"
+      },
+      {
+        "title": "Menos retrabajo administrativo",
+        "description": "Evita duplicar datos entre Excel, correos y carpetas. Tu equipo trabaja sobre la misma información actualizada.",
+        "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&auto=format&fit=crop",
+        "imageAlt": "Profesional trabajando con laptop en oficina"
+      },
+      {
+        "title": "Colaboración en equipo",
+        "description": "Varios auditores pueden trabajar en paralelo, cada uno con su rol y acceso a la información que necesita.",
+        "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&auto=format&fit=crop",
+        "imageAlt": "Equipo colaborando en una oficina moderna"
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "¿Cómo funciona?",
+    "steps": [
+      {
+        "title": "1. Registra ingresos",
+        "description": "Captura ventas y entradas de dinero con fecha, monto, método de pago y comprobantes.",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&auto=format&fit=crop",
+        "imageAlt": "Registro de un ingreso o cobro en punto de venta"
+      },
+      {
+        "title": "2. Registra gastos",
+        "description": "Documenta egresos y adjunta facturas o recibos para mantener el control financiero al día.",
+        "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&auto=format&fit=crop",
+        "imageAlt": "Registro de gastos con documentos y calculadora"
+      },
+      {
+        "title": "3. Realiza una auditoría",
+        "description": "Revisa cada registro, valida o rechaza evidencias y cierra la auditoría con un flujo claro.",
+        "image": "/images/audit-soft/auditoria.jpg",
+        "imageAlt": "Persona realizando una auditoría en AuditSoft"
+      },
+      {
+        "title": "4. Revisa la auditoría",
+        "description": "Consulta el informe final, el detalle de hallazgos y los resultados listos para entregar.",
+        "image": "/images/audit-soft/informes.jpg",
+        "imageAlt": "Revisión del informe de auditoría de AuditSoft"
+      }
+    ]
+  },
+  "screenshots": {
+    "title": "Capturas de pantalla",
+    "items": [
+      {
+        "src": "/images/audit-soft/screenshots/1.jpg",
+        "alt": "Dashboard de AuditSoft en laptop, tablet y móvil",
+        "caption": "Dashboard con saldos e ingresos filtrados"
+      },
+      {
+        "src": "/images/audit-soft/screenshots/2.jpg",
+        "alt": "Auditoría pendiente en AuditSoft en varios dispositivos",
+        "caption": "Auditoría en curso con registros y evidencias"
+      },
+      {
+        "src": "/images/audit-soft/screenshots/3.jpg",
+        "alt": "Módulo de ingresos de AuditSoft",
+        "caption": "Registro e historial de ingresos"
+      },
+      {
+        "src": "/images/audit-soft/screenshots/4.jpg",
+        "alt": "Historial de actividad en AuditSoft",
+        "caption": "Historial de ingresos, gastos y movimientos"
+      }
+    ]
+  },
+  "tutorials": {
+    "title": "Tutoriales",
+    "items": [
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Crear tu primera auditoría",
+        "duration": "6 min"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Checklists y evidencias",
+        "duration": "7 min"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Informes y seguimiento de hallazgos",
+        "duration": "5 min"
+      }
+    ]
+  },
+  "successStories": {
+    "title": "Historia de éxito",
+    "items": [
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "business": "Consultora Financiera Atlas",
+        "author": "María López, Directora de Auditoría",
+        "intro": "Un despacho de consultoría adoptó AuditSoft para estandarizar sus revisiones internas y reducir el tiempo de preparación de informes para clientes del sector financiero.",
+        "quote": "Antes armábamos cada informe desde cero en hojas de cálculo. Con AuditSoft tenemos plantillas, evidencias ordenadas y seguimiento de hallazgos en un solo lugar. Entregamos más rápido y con menos errores.",
+        "closing": "Lo recomendamos a cualquier equipo que necesite profesionalizar sus auditorías sin complicar el día a día."
+      }
+    ]
+  },
+  "pricingSection": {
+    "title": "Ofertas disponibles",
+    "subtitle": "Elige el plan mensual que mejor se adapte a tu equipo.",
+    "contactCta": "Prueba gratis"
+  },
+  "cta": {
+    "trial": "Prueba gratis por 15 días",
+    "pricing": "Ver precios",
+    "downloadLabel": "Prueba",
+    "downloadSublabel": "Gratis"
+  }
+}

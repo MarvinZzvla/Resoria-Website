@@ -12,6 +12,8 @@
   --color-resoria-orange-dark: #ea580c;
   --color-resoria-emerald: #10b981;
   --color-resoria-emerald-dark: #059669;
+  --color-resoria-violet: #8e31f9;
+  --color-resoria-violet-dark: #6d22e0;
   --color-resoria-muted: #e4e4ee;
   --color-resoria-subtext: #e4e4ee;
   --color-resoria-silver: #e0e0ea;
@@ -115,11 +117,20 @@
   animation: learn-more-neon-emerald 2.8s ease-in-out infinite;
 }
 
+.learn-more-neon--violet {
+  color: #a78bfa;
+  animation: learn-more-neon-violet 2.8s ease-in-out infinite;
+}
+
 .learn-more-neon--orange:hover {
   filter: brightness(1.12);
 }
 
 .learn-more-neon--emerald:hover {
+  filter: brightness(1.12);
+}
+
+.learn-more-neon--violet:hover {
   filter: brightness(1.12);
 }
 
@@ -157,9 +168,27 @@
   }
 }
 
+@keyframes learn-more-neon-violet {
+  0%,
+  100% {
+    transform: scale(1);
+    text-shadow:
+      0 0 8px rgba(142, 49, 249, 0.55),
+      0 0 18px rgba(142, 49, 249, 0.35);
+  }
+  50% {
+    transform: scale(1.07);
+    text-shadow:
+      0 0 14px rgba(142, 49, 249, 0.95),
+      0 0 28px rgba(142, 49, 249, 0.55),
+      0 0 42px rgba(142, 49, 249, 0.25);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .learn-more-neon--orange,
-  .learn-more-neon--emerald {
+  .learn-more-neon--emerald,
+  .learn-more-neon--violet {
     animation: none;
   }
 
@@ -173,6 +202,12 @@
     text-shadow:
       0 0 10px rgba(16, 185, 129, 0.45),
       0 0 20px rgba(16, 185, 129, 0.25);
+  }
+
+  .learn-more-neon--violet {
+    text-shadow:
+      0 0 10px rgba(142, 49, 249, 0.45),
+      0 0 20px rgba(142, 49, 249, 0.25);
   }
 }
 

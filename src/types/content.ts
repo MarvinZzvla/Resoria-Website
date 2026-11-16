@@ -14,7 +14,7 @@ export interface Product {
   description: string;
   logo: string;
   logoAlt: string;
-  accent: 'orange' | 'emerald';
+  accent: 'orange' | 'emerald' | 'violet';
   downloadUrl: string;
   plans: PricingPlan[];
 }

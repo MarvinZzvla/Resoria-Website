@@ -1,0 +1,161 @@
+{
+  "slug": "audit-soft",
+  "seo": {
+    "title": "AuditSoft — Audit Management Software | Resoria",
+    "description": "Discover AuditSoft: audit planning, documentation and follow-up. Screenshots, tutorials and success stories."
+  },
+  "heroGif": "https://media.giphy.com/media/l0MYC0LajbaPoEADu/giphy.gif",
+  "backLabel": "Back to products",
+  "whatIs": {
+    "title": "What is AuditSoft?",
+    "paragraphs": [
+      "AuditSoft is a system to plan, execute and document internal and external audits with order and traceability.",
+      "It centralizes checklists, findings, evidence and action plans so your team meets deadlines, standards and regulations without relying on scattered spreadsheets or folders."
+    ]
+  },
+  "whoIsItFor": {
+    "title": "Who is it for?",
+    "headlinePrefix": "System for your",
+    "typewriterWords": ["Audit firm", "Accounting", "Compliance", "Finance", "Consulting", "SMB", "Practice"],
+    "subtitle": "If you need to document audits clearly, track findings and deliver reports on time, AuditSoft is your solution."
+  },
+  "benefits": {
+    "title": "How can it benefit you?",
+    "items": [
+      {
+        "title": "Audits that are simple to perform",
+        "description": "A clear interface to review records, validate or reject evidence, and finish the audit without complications.",
+        "image": "/images/audit-soft/auditoria.jpg",
+        "imageAlt": "Person using AuditSoft to perform an audit simply"
+      },
+      {
+        "title": "Tracked findings",
+        "description": "Log observations, assign owners and monitor progress on each action plan until closure.",
+        "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&auto=format&fit=crop",
+        "imageAlt": "Team reviewing findings in a work meeting"
+      },
+      {
+        "title": "Centralized evidence",
+        "description": "Attach documents, screenshots and notes in one place. Everything stays linked to the audited item.",
+        "image": "/images/audit-soft/evidencias.jpg",
+        "imageAlt": "Centralized evidence in AuditSoft from desktop, mobile and physical documents"
+      },
+      {
+        "title": "Reports ready to deliver",
+        "description": "Generate clear reports with the detail you need for clients, partners or audit committees.",
+        "image": "/images/audit-soft/informes.jpg",
+        "imageAlt": "AuditSoft audit report ready to deliver in a meeting"
+      },
+      {
+        "title": "Less admin rework",
+        "description": "Avoid duplicating data across Excel, email and folders. Your team works from the same up-to-date information.",
+        "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&auto=format&fit=crop",
+        "imageAlt": "Professional working on a laptop in an office"
+      },
+      {
+        "title": "Team collaboration",
+        "description": "Multiple auditors can work in parallel, each with their role and access to the information they need.",
+        "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&auto=format&fit=crop",
+        "imageAlt": "Team collaborating in a modern office"
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "How does it work?",
+    "steps": [
+      {
+        "title": "1. Record income",
+        "description": "Capture sales and money inflows with date, amount, payment method and supporting documents.",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&auto=format&fit=crop",
+        "imageAlt": "Recording an income or payment at a point of sale"
+      },
+      {
+        "title": "2. Record expenses",
+        "description": "Log outflows and attach invoices or receipts to keep financial control up to date.",
+        "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&auto=format&fit=crop",
+        "imageAlt": "Recording expenses with documents and a calculator"
+      },
+      {
+        "title": "3. Run an audit",
+        "description": "Review each record, validate or reject evidence, and close the audit with a clear flow.",
+        "image": "/images/audit-soft/auditoria.jpg",
+        "imageAlt": "Person running an audit in AuditSoft"
+      },
+      {
+        "title": "4. Review the audit",
+        "description": "Check the final report, findings detail and results ready to deliver.",
+        "image": "/images/audit-soft/informes.jpg",
+        "imageAlt": "Reviewing an AuditSoft audit report"
+      }
+    ]
+  },
+  "screenshots": {
+    "title": "Screenshots",
+    "items": [
+      {
+        "src": "/images/audit-soft/screenshots/1.jpg",
+        "alt": "AuditSoft dashboard on laptop, tablet and phone",
+        "caption": "Dashboard with balances and filtered income"
+      },
+      {
+        "src": "/images/audit-soft/screenshots/2.jpg",
+        "alt": "Pending audit in AuditSoft across devices",
+        "caption": "Audit in progress with records and evidence"
+      },
+      {
+        "src": "/images/audit-soft/screenshots/3.jpg",
+        "alt": "AuditSoft income module",
+        "caption": "Income registration and history"
+      },
+      {
+        "src": "/images/audit-soft/screenshots/4.jpg",
+        "alt": "Activity history in AuditSoft",
+        "caption": "History of income, expenses and activity"
+      }
+    ]
+  },
+  "tutorials": {
+    "title": "Tutorials",
+    "items": [
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Create your first audit",
+        "duration": "6 min"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Checklists and evidence",
+        "duration": "7 min"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Reports and findings follow-up",
+        "duration": "5 min"
+      }
+    ]
+  },
+  "successStories": {
+    "title": "Success story",
+    "items": [
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "business": "Atlas Financial Consulting",
+        "author": "María López, Audit Director",
+        "intro": "A consulting firm adopted AuditSoft to standardize internal reviews and cut report preparation time for financial-sector clients.",
+        "quote": "We used to build every report from scratch in spreadsheets. With AuditSoft we have templates, organized evidence and findings follow-up in one place. We deliver faster with fewer errors.",
+        "closing": "We recommend it to any team that needs to professionalize audits without overcomplicating day-to-day work."
+      }
+    ]
+  },
+  "pricingSection": {
+    "title": "Available plans",
+    "subtitle": "Choose the monthly plan that best fits your team.",
+    "contactCta": "Free trial"
+  },
+  "cta": {
+    "trial": "Free 15-day trial",
+    "pricing": "View pricing",
+    "downloadLabel": "Free",
+    "downloadSublabel": "Trial"
+  }
+}

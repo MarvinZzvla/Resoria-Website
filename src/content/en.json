@@ -3,9 +3,9 @@
   "locale": "en",
   "alternateLocale": "es",
   "seo": {
-    "title": "Resoria — Restaurant & Inventory Software | Easy Restaurant & Mi Inventario",
-    "description": "Resoria builds simple software for restaurants and inventory management. Choose one-time or monthly payment. Easy Restaurant & Mi Inventario.",
-    "ogImageAlt": "Resoria Software Solutions — Easy Restaurant and Mi Inventario"
+    "title": "Resoria — Restaurant, Inventory & Audit Software | Easy Restaurant, Mi Inventario & AuditSoft",
+    "description": "Resoria builds simple software for restaurants, inventory and audits. Choose one-time or monthly payment. Easy Restaurant, Mi Inventario & AuditSoft.",
+    "ogImageAlt": "Resoria Software Solutions — Easy Restaurant, Mi Inventario and AuditSoft"
   },
   "nav": {
     "products": "Products",
@@ -102,6 +102,31 @@
           ]
         }
       ]
+    },
+    {
+      "id": "audit-soft",
+      "name": "AuditSoft",
+      "tagline": "Organized audits without the stress",
+      "description": "Plan, document and track internal and external audits. Ideal for accountants, audit firms and compliance teams.",
+      "logo": "/logos/auditsoft-sin-bg.svg",
+      "logoAlt": "AuditSoft logo — audit management software",
+      "accent": "violet",
+      "downloadUrl": "https://auditsoft.resorias.com",
+      "plans": [
+        {
+          "id": "saas",
+          "name": "Monthly payment",
+          "price": "$25",
+          "period": "USD / month",
+          "popular": true,
+          "features": [
+            "Multi-device access",
+            "Real-time team collaboration",
+            "Cloud history and backups",
+            "Priority support"
+          ]
+        }
+      ]
     }
   ],
   "compareSection": {
@@ -177,11 +202,12 @@
       "product": "Product",
       "plan": "Plan",
       "message": "Message (optional)",
-      "submit": "Send request",
+      "submit": "Send via WhatsApp",
       "productOptions": [
         { "value": "", "label": "Select a product" },
         { "value": "easy-restaurant", "label": "Easy Restaurant" },
-        { "value": "mi-inventario", "label": "Mi Inventario" }
+        { "value": "mi-inventario", "label": "Mi Inventario" },
+        { "value": "audit-soft", "label": "AuditSoft" }
       ],
       "planOptions": [
         { "value": "", "label": "Select a plan" },
@@ -191,8 +217,8 @@
     },
     "contactInfo": {
       "email": "ventas@resorias.com",
-      "phone": "+1 (000) 000-0000",
-      "whatsapp": "+1 (000) 000-0000"
+      "phone": "+505 8262 2565",
+      "whatsapp": "+505 8262 2565"
     },
     "paymentTitle": "Accepted payment methods",
     "paymentMethods": [
@@ -214,7 +240,7 @@
     ]
   },
   "footer": {
-    "tagline": "Software Solutions — Easy Restaurant & Mi Inventario",
+    "tagline": "Software Solutions — Easy Restaurant, Mi Inventario & AuditSoft",
     "rights": "All rights reserved.",
     "privacy": "Privacy",
     "terms": "Terms"
