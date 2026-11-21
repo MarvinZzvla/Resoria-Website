@@ -1,6 +1,5 @@
 ---
 import type { SiteContent } from '../types/content';
-import { publicAsset } from '../lib/assets';
 
 interface Props {
   content: SiteContent;
@@ -20,38 +19,24 @@ const seoHeadline = `${hero.headlinePrefix} ${hero.typewriterWords.join(', ')}`;
 
   <div class="relative mx-auto w-[min(1120px,92vw)] pt-4 md:pt-6">
     <div class="mx-auto max-w-2xl text-center" data-animate>
-      <div class="mb-4 flex flex-col items-center gap-0">
-        <div class="leading-[0]">
-          <img
-            src={publicAsset('/logos/resoria-transparent.png')}
-            alt={hero.logoAlt}
-            width="640"
-            height="220"
-            decoding="async"
-            fetchpriority="high"
-            class="mx-auto block h-36 w-auto sm:h-40 md:h-48 lg:h-56"
-          />
-        </div>
-
-        <h1
-          id="hero-heading"
-          class="mx-auto -mt-6 max-w-2xl text-center text-2xl leading-tight font-bold sm:-mt-8 sm:text-3xl md:-mt-10 md:text-4xl lg:-mt-12"
-        >
-          <span class="text-gradient">{hero.headlinePrefix} </span>
-          <span
-            class="typewriter-text bg-gradient-to-r from-resoria-blue to-[#33c4ff] bg-clip-text text-transparent drop-shadow-[0_0_18px_rgba(0,168,255,0.35)]"
-            data-typewriter
-            data-words={typewriterWordsJson}
-            aria-live="polite"
-            aria-atomic="true"
-          >{hero.typewriterWords[0]}</span><span
-            class="typewriter-cursor font-light text-resoria-blue"
-            data-typewriter-cursor
-            aria-hidden="true"
-          >|</span>
-          <span class="sr-only">{seoHeadline}</span>
-        </h1>
-      </div>
+      <h1
+        id="hero-heading"
+        class="mx-auto mb-4 max-w-2xl text-center text-2xl leading-tight font-bold sm:text-3xl md:text-4xl"
+      >
+        <span class="text-gradient">{hero.headlinePrefix} </span>
+        <span
+          class="typewriter-text bg-gradient-to-r from-resoria-blue to-[#33c4ff] bg-clip-text text-transparent drop-shadow-[0_0_18px_rgba(0,168,255,0.35)]"
+          data-typewriter
+          data-words={typewriterWordsJson}
+          aria-live="polite"
+          aria-atomic="true"
+        >{hero.typewriterWords[0]}</span><span
+          class="typewriter-cursor font-light text-resoria-blue"
+          data-typewriter-cursor
+          aria-hidden="true"
+        >|</span>
+        <span class="sr-only">{seoHeadline}</span>
+      </h1>
 
       <p class="mx-auto mb-4 max-w-lg text-base text-resoria-muted sm:text-lg">{hero.subheadline}</p>
       <a
