@@ -130,8 +130,24 @@
     ]
   },
   "successStories": {
-    "title": "Historia de éxito",
+    "title": "Historias de éxito",
     "items": [
+      {
+        "videoId": "3O_uIsx7nGU",
+        "business": "Barbershop Benthi",
+        "author": "Equipo de Barbershop Benthi",
+        "intro": "En Barbershop Benthi instalamos Mi Inventario para controlar productos, ventas y el movimiento diario del negocio.",
+        "quote": "Mi Inventario nos ayuda a controlar productos y ventas del día a día en la barbería.",
+        "closing": "Una solución práctica para barberías y negocios de servicio que necesitan orden en su inventario."
+      },
+      {
+        "videoId": "t6ayRz5tLOY",
+        "business": "Distribuidora Krizar",
+        "author": "Equipo de Distribuidora Krizar",
+        "intro": "Distribuidora Krizar adoptó Mi Inventario para llevar el control de stock y salidas de mercancía de forma digital.",
+        "quote": "Mi Inventario nos da control claro del stock y de las salidas de mercancía.",
+        "closing": "Ideal para distribuidoras que quieren dejar atrás el control manual y ganar precisión."
+      },
       {
         "videoId": "2zifDAwHaIQ",
         "business": "Distribuidora Cristal",

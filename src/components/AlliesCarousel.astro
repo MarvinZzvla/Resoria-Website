@@ -1,0 +1,132 @@
+---
+import type { SiteContent } from '../types/content';
+import { publicAsset } from '../lib/assets';
+
+interface Props {
+  content: SiteContent;
+}
+
+const { content } = Astro.props;
+const { alliesSection } = content;
+const track = [...alliesSection.items, ...alliesSection.items];
+---
+
+<section id={alliesSection.id} class="allies-section py-12 md:py-14" aria-labelledby="allies-heading">
+  <div class="mx-auto w-[min(1120px,92vw)]">
+    <header class="mb-8 text-center" data-animate>
+      <h2 id="allies-heading" class="text-3xl font-bold tracking-wide uppercase md:text-4xl">
+        {alliesSection.title}
+      </h2>
+    </header>
+  </div>
+
+  <div class="allies-marquee" data-animate aria-label={alliesSection.title}>
+    <div class="allies-marquee__fade allies-marquee__fade--left" aria-hidden="true"></div>
+    <div class="allies-marquee__fade allies-marquee__fade--right" aria-hidden="true"></div>
+    <div class="allies-marquee__track">
+      {track.map((ally, index) => (
+        <div class="allies-marquee__item" aria-hidden={index >= alliesSection.items.length ? 'true' : undefined}>
+          <img
+            src={publicAsset(ally.logo)}
+            alt={index < alliesSection.items.length ? ally.logoAlt : ''}
+            width="480"
+            height="240"
+            loading="lazy"
+            decoding="async"
+            class="allies-marquee__logo"
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .allies-marquee {
+    position: relative;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
+
+  .allies-marquee__track {
+    display: flex;
+    width: max-content;
+    align-items: center;
+    gap: clamp(2.5rem, 6vw, 4.5rem);
+    padding-block: 0.5rem;
+    animation: allies-marquee-scroll 42s linear infinite;
+  }
+
+  .allies-marquee:hover .allies-marquee__track {
+    animation-play-state: paused;
+  }
+
+  .allies-marquee__item {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: clamp(9.5rem, 18vw, 12rem);
+    height: clamp(4.75rem, 9vw, 6rem);
+  }
+
+  .allies-marquee__logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: transparent;
+    opacity: 0.95;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  .allies-marquee__item:hover .allies-marquee__logo {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  .allies-marquee__fade {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 4rem;
+  }
+
+  .allies-marquee__fade--left {
+    left: 0;
+    background: linear-gradient(to right, var(--color-resoria-bg), transparent);
+  }
+
+  .allies-marquee__fade--right {
+    right: 0;
+    background: linear-gradient(to left, var(--color-resoria-bg), transparent);
+  }
+
+  @keyframes allies-marquee-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .allies-marquee__track {
+      animation: none;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      max-width: 1120px;
+      margin-inline: auto;
+      padding-inline: 4vw;
+      gap: 2rem;
+    }
+
+    .allies-marquee__item[aria-hidden='true'] {
+      display: none;
+    }
+  }
+</style>

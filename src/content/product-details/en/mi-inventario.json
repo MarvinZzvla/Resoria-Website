@@ -130,8 +130,24 @@
     ]
   },
   "successStories": {
-    "title": "Success story",
+    "title": "Success stories",
     "items": [
+      {
+        "videoId": "3O_uIsx7nGU",
+        "business": "Barbershop Benthi",
+        "author": "Barbershop Benthi team",
+        "intro": "At Barbershop Benthi we installed Mi Inventario to control products, sales and daily business movement.",
+        "quote": "Mi Inventario helps us control products and daily sales at the barbershop.",
+        "closing": "A practical solution for barbershops and service businesses that need orderly inventory."
+      },
+      {
+        "videoId": "t6ayRz5tLOY",
+        "business": "Distribuidora Krizar",
+        "author": "Distribuidora Krizar team",
+        "intro": "Distribuidora Krizar adopted Mi Inventario to track stock and product outflow digitally.",
+        "quote": "Mi Inventario gives us clear control of stock and product outflow.",
+        "closing": "Ideal for distributors that want to leave manual tracking behind and gain accuracy."
+      },
       {
         "videoId": "2zifDAwHaIQ",
         "business": "Distribuidora Cristal",

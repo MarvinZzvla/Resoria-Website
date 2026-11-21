@@ -130,15 +130,39 @@
     ]
   },
   "successStories": {
-    "title": "Success story",
+    "title": "Success stories",
     "items": [
       {
-        "videoId": "We3rdSxrWjY",
-        "business": "Rinconcito Encantador",
-        "author": "Josue Ruiz, General Manager",
-        "intro": "In Masaya we installed Easy Restaurant at Rinconcito Encantador, a two-story restaurant. Setup took only a few minutes and, after 30 minutes of training, the team was taking orders on tablets, sending tickets to the kitchen and billing at the register with a thermal printer when guests ask for the check.",
-        "quote": "It has helped me perform better, support my staff so they can send orders more easily and make sure customers are not delayed waiting for their food at the table.",
-        "closing": "The system is easy to understand, easy to install and quick to learn. If you want order across tables, kitchen tickets and checkout, this is your system."
+        "videoId": "t8EVyd6Bdyc",
+        "business": "Portico",
+        "author": "Portico team",
+        "intro": "At Portico we installed Easy Restaurant to organize tables, orders and checkout in one workflow.",
+        "quote": "With Easy Restaurant we speed up tables, orders and checkout. Service is more organized and faster.",
+        "closing": "A system that is easy to learn and ready to operate from day one."
+      },
+      {
+        "videoId": "7wtBDYfLELk",
+        "business": "Flor de Pochote",
+        "author": "Flor de Pochote team",
+        "intro": "Flor de Pochote adopted Easy Restaurant to centralize orders, kitchen and billing without complicating daily work.",
+        "quote": "Easy Restaurant made orders, kitchen and billing easier in a single system.",
+        "closing": "Ideal for teams that want order in service and payments."
+      },
+      {
+        "videoId": "4Otap7FbPBI",
+        "business": "OfeMarket",
+        "author": "OfeMarket team",
+        "intro": "At OfeMarket we put Easy Restaurant to work as a point of sale to serve faster with better control.",
+        "quote": "With Easy Restaurant we organize the point of sale and serve customers faster.",
+        "closing": "A quick setup and a system built for the pace of business."
+      },
+      {
+        "videoId": "3Du9BVvZFhI",
+        "business": "Paris Rica Tentación",
+        "author": "Paris Rica Tentación team",
+        "intro": "In Juigalpa, Chontales, Paris Rica Tentación uses Easy Restaurant to keep orders, kitchen and payments under control.",
+        "quote": "Easy Restaurant helped us organize orders, kitchen and payments in Juigalpa.",
+        "closing": "A practical solution for food businesses that want to grow with order."
       }
     ]
   },

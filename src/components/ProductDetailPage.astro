@@ -263,28 +263,30 @@ const playLabel = locale === 'en' ? 'Play video' : 'Reproducir video';
         </h2>
       </header>
 
-      {detail.successStories.items.map((story, i) => (
-        <article
-          class="mx-auto grid max-w-5xl gap-8 overflow-hidden rounded-2xl border border-white/10 bg-resoria-card p-5 shadow-xl shadow-black/25 transition-all duration-300 hover:border-white/20 sm:p-6 lg:grid-cols-[minmax(240px,300px)_1fr] lg:items-start lg:gap-10"
-          data-animate
-          style={`--delay: ${i * 0.08}s`}
-        >
-          <div class="mx-auto w-full max-w-[280px] lg:mx-0">
-            <YouTubeEmbed videoId={story.videoId} title={story.business} playLabel={playLabel} aspect="short" />
-          </div>
-          <div class="text-center lg:text-left">
-            <h3 class="mb-4 text-xl font-semibold md:text-2xl">{story.business}</h3>
-            <p class="mb-5 text-sm leading-relaxed text-resoria-muted md:text-base">{story.intro}</p>
-            <blockquote class="mb-5 border-l-2 border-resoria-blue/60 pl-4">
-              <p class="text-base leading-relaxed text-[#f0f0f5] italic md:text-lg">&ldquo;{story.quote}&rdquo;</p>
-            </blockquote>
-            {story.closing && (
-              <p class="mb-5 text-sm leading-relaxed text-resoria-muted md:text-base">{story.closing}</p>
-            )}
-            <p class="text-sm font-medium text-resoria-silver">&mdash; {story.author}</p>
-          </div>
-        </article>
-      ))}
+      <div class="mx-auto flex max-w-5xl flex-col gap-8">
+        {detail.successStories.items.map((story, i) => (
+          <article
+            class="grid gap-8 overflow-hidden rounded-2xl border border-white/10 bg-resoria-card p-5 shadow-xl shadow-black/25 transition-all duration-300 hover:border-white/20 sm:p-6 lg:grid-cols-[minmax(240px,300px)_1fr] lg:items-start lg:gap-10"
+            data-animate
+            style={`--delay: ${i * 0.08}s`}
+          >
+            <div class="mx-auto w-full max-w-[280px] lg:mx-0">
+              <YouTubeEmbed videoId={story.videoId} title={story.business} playLabel={playLabel} aspect="short" />
+            </div>
+            <div class="text-center lg:text-left">
+              <h3 class="mb-4 text-xl font-semibold md:text-2xl">{story.business}</h3>
+              <p class="mb-5 text-sm leading-relaxed text-resoria-muted md:text-base">{story.intro}</p>
+              <blockquote class="mb-5 border-l-2 border-resoria-blue/60 pl-4">
+                <p class="text-base leading-relaxed text-[#f0f0f5] italic md:text-lg">&ldquo;{story.quote}&rdquo;</p>
+              </blockquote>
+              {story.closing && (
+                <p class="mb-5 text-sm leading-relaxed text-resoria-muted md:text-base">{story.closing}</p>
+              )}
+              <p class="text-sm font-medium text-resoria-silver">&mdash; {story.author}</p>
+            </div>
+          </article>
+        ))}
+      </div>
     </div>
   </section>
 

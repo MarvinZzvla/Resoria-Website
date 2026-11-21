@@ -107,6 +107,11 @@ export interface SiteContent {
     paymentTitle: string;
     paymentMethods: PaymentMethod[];
   };
+  alliesSection: {
+    id: string;
+    title: string;
+    items: { id: string; name: string; logo: string; logoAlt: string }[];
+  };
   footer: {
     tagline: string;
     rights: string;

@@ -164,16 +164,46 @@
     "subtitle": "Businesses already trusting Resoria software.",
     "stories": [
       {
-        "videoId": "We3rdSxrWjY",
-        "title": "Rinconcito Encantador",
-        "quote": "With Easy Restaurant we manage tables, orders and kitchen in one place. Service runs much smoother.",
-        "author": "Josue Ruiz, General Manager"
+        "videoId": "t8EVyd6Bdyc",
+        "title": "Portico",
+        "quote": "With Easy Restaurant we speed up tables, orders and checkout. Service is more organized and faster.",
+        "author": "Portico — Easy Restaurant"
+      },
+      {
+        "videoId": "3O_uIsx7nGU",
+        "title": "Barbershop Benthi",
+        "quote": "Mi Inventario helps us control products and daily sales at the barbershop.",
+        "author": "Barbershop Benthi — Mi Inventario"
+      },
+      {
+        "videoId": "7wtBDYfLELk",
+        "title": "Flor de Pochote",
+        "quote": "Easy Restaurant made orders, kitchen and billing easier in a single system.",
+        "author": "Flor de Pochote — Easy Restaurant"
+      },
+      {
+        "videoId": "4Otap7FbPBI",
+        "title": "OfeMarket",
+        "quote": "With Easy Restaurant we organize the point of sale and serve customers faster.",
+        "author": "OfeMarket — Easy Restaurant"
+      },
+      {
+        "videoId": "t6ayRz5tLOY",
+        "title": "Distribuidora Krizar",
+        "quote": "Mi Inventario gives us clear control of stock and product outflow.",
+        "author": "Distribuidora Krizar — Mi Inventario"
       },
       {
         "videoId": "2zifDAwHaIQ",
         "title": "Distribuidora Cristal",
         "quote": "Mi Inventario gives us clear stock control and helps us restock every product on time.",
-        "author": "Frederick Pavón, Owner"
+        "author": "Distribuidora Cristal — Mi Inventario"
+      },
+      {
+        "videoId": "3Du9BVvZFhI",
+        "title": "Paris Rica Tentación",
+        "quote": "Easy Restaurant helped us organize orders, kitchen and payments in Juigalpa.",
+        "author": "Paris Rica Tentación — Easy Restaurant"
       }
     ]
   },
@@ -236,6 +266,54 @@
         "id": "cash",
         "name": "Cash",
         "description": "Cash payment available depending on your location. Contact us to coordinate."
+      }
+    ]
+  },
+  "alliesSection": {
+    "id": "aliados",
+    "title": "Our partners",
+    "items": [
+      {
+        "id": "portico",
+        "name": "Pórtico",
+        "logo": "/images/allies/portico.png?v=2",
+        "logoAlt": "Pórtico logo"
+      },
+      {
+        "id": "krizar",
+        "name": "Distribuidora Krizar",
+        "logo": "/images/allies/krizar.png?v=2",
+        "logoAlt": "Distribuidora Krizar logo"
+      },
+      {
+        "id": "rinconcito-encantador",
+        "name": "Rinconcito Encantador",
+        "logo": "/images/allies/rinconcito-encantador.png?v=2",
+        "logoAlt": "Rinconcito Encantador logo"
+      },
+      {
+        "id": "paris-rica-tentacion",
+        "name": "Paris Rica Tentación",
+        "logo": "/images/allies/paris-rica-tentacion.png?v=3",
+        "logoAlt": "Paris Rica Tentación logo"
+      },
+      {
+        "id": "flor-de-pochote",
+        "name": "Flor de Pochote",
+        "logo": "/images/allies/flor-de-pochote.png?v=2",
+        "logoAlt": "Flor de Pochote logo"
+      },
+      {
+        "id": "barber-benthi",
+        "name": "Barber Benthi",
+        "logo": "/images/allies/barber-benthi.png?v=2",
+        "logoAlt": "Barber Benthi logo"
+      },
+      {
+        "id": "ofemarket",
+        "name": "OfeMarket",
+        "logo": "/images/allies/ofemarket.png?v=2",
+        "logoAlt": "OfeMarket logo"
       }
     ]
   },
