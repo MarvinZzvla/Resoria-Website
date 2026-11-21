@@ -14,9 +14,11 @@ export interface Product {
   description: string;
   logo: string;
   logoAlt: string;
-  accent: 'orange' | 'emerald' | 'violet';
+  accent: 'orange' | 'emerald' | 'violet' | 'sky';
   downloadUrl: string;
   plans: PricingPlan[];
+  /** Si es false, el producto se oculta del sitio público sin borrarse */
+  available?: boolean;
 }
 
 export interface SuccessStory {

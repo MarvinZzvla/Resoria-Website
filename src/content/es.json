@@ -3,9 +3,9 @@
   "locale": "es",
   "alternateLocale": "en",
   "seo": {
-    "title": "Resoria — Software para restaurantes, inventarios y auditorías | Easy Restaurant, Mi Inventario & AuditSoft",
-    "description": "Resoria crea software simple para restaurantes, inventarios y auditorías. Elige pago único o pago mensual. Easy Restaurant, Mi Inventario y AuditSoft.",
-    "ogImageAlt": "Resoria Software Solutions — Easy Restaurant, Mi Inventario y AuditSoft"
+    "title": "Resoria — Software para negocios y escuelas | Easy Restaurant, Mi Inventario & SoftSchools",
+    "description": "Resoria crea software simple para restaurantes, inventarios y escuelas. Easy Restaurant, Mi Inventario y SoftSchools.",
+    "ogImageAlt": "Resoria Software Solutions — Easy Restaurant, Mi Inventario y SoftSchools"
   },
   "nav": {
     "products": "Productos",
@@ -16,7 +16,7 @@
   },
   "hero": {
     "headlinePrefix": "Sistema para tu",
-    "typewriterWords": ["Negocio","Restaurante", "Cafetería", "Ferretería", "Farmacia"],
+    "typewriterWords": ["Negocio", "Restaurante", "Escuela", "Academia", "Farmacia"],
     "subheadline": "Resoria es una empresa de software que simplifica la gestión de tu negocio.",
     "cta": "Ver productos y precios",
     "logoAlt": "Resoria Software Solutions"
@@ -111,6 +111,7 @@
       "logo": "/logos/auditsoft-sin-bg.svg",
       "logoAlt": "Logo de AuditSoft — software de auditoría",
       "accent": "violet",
+      "available": false,
       "downloadUrl": "https://auditsoft.resorias.com",
       "plans": [
         {
@@ -124,6 +125,31 @@
             "Colaboración en equipo en tiempo real",
             "Historial y respaldo en la nube",
             "Soporte prioritario"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soft-schools",
+      "name": "SoftSchools",
+      "tagline": "Tu colegio digital, listo en minutos",
+      "description": "Gestiona escuelas y academias: estudiantes, planes escolares, cursos, asistencia, calificaciones y finanzas en un solo sistema.",
+      "logo": "/logos/softschools.png",
+      "logoAlt": "Logo de SoftSchools — software para escuelas y academias",
+      "accent": "sky",
+      "downloadUrl": "https://softschools.resorias.com/",
+      "plans": [
+        {
+          "id": "saas",
+          "name": "Pago mensual",
+          "price": "$30",
+          "period": "USD / mes",
+          "popular": true,
+          "features": [
+            "Expedientes, finanzas y caja en un solo lugar",
+            "Planes escolares y cursos con cobros automáticos",
+            "Prueba gratis 7 días sin tarjeta",
+            "Cancela cuando quieras"
           ]
         }
       ]
@@ -237,7 +263,7 @@
         { "value": "", "label": "Selecciona un producto" },
         { "value": "easy-restaurant", "label": "Easy Restaurant" },
         { "value": "mi-inventario", "label": "Mi Inventario" },
-        { "value": "audit-soft", "label": "AuditSoft" }
+        { "value": "soft-schools", "label": "SoftSchools" }
       ],
       "planOptions": [
         { "value": "", "label": "Selecciona modalidad" },
@@ -318,7 +344,7 @@
     ]
   },
   "footer": {
-    "tagline": "Software Solutions — Easy Restaurant, Mi Inventario & AuditSoft",
+    "tagline": "Software Solutions — Easy Restaurant, Mi Inventario & SoftSchools",
     "rights": "Todos los derechos reservados.",
     "privacy": "Privacidad",
     "terms": "Términos"

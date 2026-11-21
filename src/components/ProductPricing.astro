@@ -14,6 +14,7 @@ const accentBorder = {
   orange: 'border-t-resoria-orange',
   emerald: 'border-t-resoria-emerald',
   violet: 'border-t-resoria-violet',
+  sky: 'border-t-resoria-sky',
 } as const;
 
 const logoClass = {
@@ -21,24 +22,28 @@ const logoClass = {
     'mx-auto block h-56 w-auto sm:h-64 md:h-72',
   'mi-inventario': 'mx-auto block max-h-24 w-auto sm:max-h-28',
   'audit-soft': 'mx-auto block max-h-28 w-auto sm:max-h-32 md:max-h-36',
+  'soft-schools': 'mx-auto block max-h-28 w-auto sm:max-h-32 md:max-h-36',
 } as const;
 
 const logoTitleGap = {
   'easy-restaurant': '-mb-12 sm:-mb-16 md:-mb-20',
   'mi-inventario': 'mb-4',
   'audit-soft': 'mb-4',
+  'soft-schools': 'mb-4',
 } as const;
 
 const titleOffset = {
   'easy-restaurant': '-mt-4 sm:-mt-6',
   'mi-inventario': '',
   'audit-soft': '',
+  'soft-schools': '',
 } as const;
 
 const logoDimensions = {
   'easy-restaurant': { width: 640, height: 256 },
   'mi-inventario': { width: 200, height: 80 },
   'audit-soft': { width: 280, height: 280 },
+  'soft-schools': { width: 280, height: 340 },
 } as const;
 
 const logoHasTitle = new Set(['easy-restaurant', 'audit-soft']);

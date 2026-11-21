@@ -2,6 +2,7 @@
 import type { Product } from '../types/content';
 import type { ProductDetail } from '../types/product-detail';
 import { publicAsset, sitePath } from '../lib/assets';
+import { saasTrialProductIds } from '../lib/product-details';
 import DownloadBadge from './DownloadBadge.astro';
 import YouTubeEmbed from './YouTubeEmbed.astro';
 
@@ -17,31 +18,36 @@ const { product, detail, locale, productsSectionId, contactSectionId } = Astro.p
 const homePath = sitePath(`${locale}/`);
 const pricingHref = `${homePath}#${productsSectionId}`;
 const contactHref = `${homePath}#${contactSectionId}`;
-const trialHref = product.id === 'audit-soft' ? product.downloadUrl : contactHref;
+const isSaasTrial = saasTrialProductIds.has(product.id);
+const trialHref = isSaasTrial ? product.downloadUrl : contactHref;
 const popularLabel = locale === 'en' ? 'Most popular' : 'Más popular';
 
 const accentHero = {
   orange: 'from-resoria-orange/30 to-resoria-bg',
   emerald: 'from-resoria-emerald/30 to-resoria-bg',
   violet: 'from-resoria-violet/30 to-resoria-bg',
+  sky: 'from-resoria-sky/30 to-resoria-bg',
 } as const;
 
 const accentText = {
   orange: 'text-resoria-orange',
   emerald: 'text-resoria-emerald',
   violet: 'text-resoria-violet',
+  sky: 'text-resoria-sky',
 } as const;
 
 const accentBtn = {
   orange: 'from-resoria-orange to-resoria-orange-dark hover:shadow-[0_8px_32px_rgba(249,115,22,0.25)]',
   emerald: 'from-resoria-emerald to-resoria-emerald-dark hover:shadow-[0_8px_32px_rgba(16,185,129,0.25)]',
   violet: 'from-resoria-violet to-resoria-violet-dark hover:shadow-[0_8px_32px_rgba(142,49,249,0.25)]',
+  sky: 'from-resoria-sky to-resoria-sky-dark hover:shadow-[0_8px_32px_rgba(26,95,255,0.25)]',
 } as const;
 
 const accentCheck = {
   orange: 'text-resoria-orange',
   emerald: 'text-resoria-emerald',
   violet: 'text-resoria-violet',
+  sky: 'text-resoria-sky',
 } as const;
 
 const contactBtnClass = `inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r px-5 py-3 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97] active:brightness-95 ${accentBtn[product.accent]}`;
@@ -50,12 +56,14 @@ const typewriterGradient = {
   orange: 'from-resoria-orange to-[#ffb347]',
   emerald: 'from-resoria-emerald to-[#34d399]',
   violet: 'from-resoria-violet to-[#c084fc]',
+  sky: 'from-resoria-sky to-[#60a5fa]',
 } as const;
 
 const detailLogoSizes = {
   'easy-restaurant': { width: 640, height: 256, class: 'h-40 w-auto shrink-0 sm:h-48 md:h-56' },
   'mi-inventario': { width: 280, height: 112, class: 'h-24 w-auto shrink-0 sm:h-28' },
   'audit-soft': { width: 280, height: 280, class: 'h-28 w-auto shrink-0 sm:h-32 md:h-36' },
+  'soft-schools': { width: 280, height: 340, class: 'h-28 w-auto shrink-0 sm:h-32 md:h-36' },
 } as const;
 
 const detailLogo = detailLogoSizes[product.id as keyof typeof detailLogoSizes] ?? detailLogoSizes['mi-inventario'];
@@ -351,8 +359,8 @@ const playLabel = locale === 'en' ? 'Play video' : 'Reproducir video';
             </ul>
             <a
               href={trialHref}
-              target={product.id === 'audit-soft' ? '_blank' : undefined}
-              rel={product.id === 'audit-soft' ? 'noopener noreferrer' : undefined}
+              target={isSaasTrial ? '_blank' : undefined}
+              rel={isSaasTrial ? 'noopener noreferrer' : undefined}
               class={contactBtnClass}
             >
               {detail.pricingSection.contactCta}

@@ -14,6 +14,8 @@
   --color-resoria-emerald-dark: #059669;
   --color-resoria-violet: #8e31f9;
   --color-resoria-violet-dark: #6d22e0;
+  --color-resoria-sky: #1a5fff;
+  --color-resoria-sky-dark: #0f46d1;
   --color-resoria-muted: #e4e4ee;
   --color-resoria-subtext: #e4e4ee;
   --color-resoria-silver: #e0e0ea;
@@ -122,6 +124,11 @@
   animation: learn-more-neon-violet 2.8s ease-in-out infinite;
 }
 
+.learn-more-neon--sky {
+  color: #60a5fa;
+  animation: learn-more-neon-sky 2.8s ease-in-out infinite;
+}
+
 .learn-more-neon--orange:hover {
   filter: brightness(1.12);
 }
@@ -131,6 +138,10 @@
 }
 
 .learn-more-neon--violet:hover {
+  filter: brightness(1.12);
+}
+
+.learn-more-neon--sky:hover {
   filter: brightness(1.12);
 }
 
@@ -185,10 +196,28 @@
   }
 }
 
+@keyframes learn-more-neon-sky {
+  0%,
+  100% {
+    transform: scale(1);
+    text-shadow:
+      0 0 8px rgba(26, 95, 255, 0.55),
+      0 0 18px rgba(26, 95, 255, 0.35);
+  }
+  50% {
+    transform: scale(1.07);
+    text-shadow:
+      0 0 14px rgba(26, 95, 255, 0.95),
+      0 0 28px rgba(26, 95, 255, 0.55),
+      0 0 42px rgba(26, 95, 255, 0.25);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .learn-more-neon--orange,
   .learn-more-neon--emerald,
-  .learn-more-neon--violet {
+  .learn-more-neon--violet,
+  .learn-more-neon--sky {
     animation: none;
   }
 
@@ -208,6 +237,12 @@
     text-shadow:
       0 0 10px rgba(142, 49, 249, 0.45),
       0 0 20px rgba(142, 49, 249, 0.25);
+  }
+
+  .learn-more-neon--sky {
+    text-shadow:
+      0 0 10px rgba(26, 95, 255, 0.45),
+      0 0 20px rgba(26, 95, 255, 0.25);
   }
 }
 

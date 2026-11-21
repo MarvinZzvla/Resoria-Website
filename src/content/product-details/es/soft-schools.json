@@ -1,0 +1,156 @@
+{
+  "slug": "soft-schools",
+  "seo": {
+    "title": "SoftSchools — Software para escuelas y academias | Resoria",
+    "description": "Conoce SoftSchools: gestión de colegios, alumnos, finanzas, planes escolares y cursos. Prueba gratis 7 días."
+  },
+  "heroGif": "https://media.giphy.com/media/l0MYEqEzwMWFCg8rm/giphy.gif",
+  "backLabel": "Volver a productos",
+  "whatIs": {
+    "title": "¿Qué es SoftSchools?",
+    "paragraphs": [
+      "SoftSchools es tu colegio digital: un sistema en la nube para administrar escuelas, academias e instituciones educativas desde un solo lugar.",
+      "Centraliza expedientes de estudiantes, planes escolares, cursos, asistencia, calificaciones, mensajería y finanzas para que tu equipo trabaje con orden y sin papeles dispersos."
+    ]
+  },
+  "whoIsItFor": {
+    "title": "¿Para quién sirve?",
+    "headlinePrefix": "Sistema para tu",
+    "typewriterWords": ["Escuela", "Colegio", "Academia", "Instituto", "Centro educativo", "Guardería", "Universidad"],
+    "subtitle": "Si administras alumnos, docentes, cobros y horarios, SoftSchools está hecho para tu institución."
+  },
+  "benefits": {
+    "title": "¿Cómo te puede beneficiar?",
+    "items": [
+      {
+        "title": "Colegio digital listo en minutos",
+        "description": "Crea tu institución, invita a tu equipo y empieza a operar sin instalaciones complicadas.",
+        "image": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&auto=format&fit=crop",
+        "imageAlt": "Aula moderna lista para gestión digital"
+      },
+      {
+        "title": "Expedientes y directorio claros",
+        "description": "Administra estudiantes, padres/tutores y personal con información centralizada y fácil de buscar.",
+        "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&auto=format&fit=crop",
+        "imageAlt": "Estudiantes y equipo educativo trabajando juntos"
+      },
+      {
+        "title": "Planes escolares y cursos",
+        "description": "Organiza grados, materias, agenda semanal, cupos e inscripciones con cobros automáticos.",
+        "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&auto=format&fit=crop",
+        "imageAlt": "Planificación académica con libros y horarios"
+      },
+      {
+        "title": "Finanzas y caja en un solo lugar",
+        "description": "Controla cuotas, mensualidades, estados de cuenta y comprobantes de pago sin hojas de cálculo.",
+        "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&auto=format&fit=crop",
+        "imageAlt": "Control financiero y pagos escolares"
+      },
+      {
+        "title": "Asistencia y calificaciones",
+        "description": "Registra asistencia, tareas y notas para dar seguimiento al avance de cada estudiante.",
+        "image": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&auto=format&fit=crop",
+        "imageAlt": "Docente revisando asistencia y progreso de alumnos"
+      },
+      {
+        "title": "Prueba sin compromiso",
+        "description": "Activa 7 días de prueba gratis sin tarjeta. Cancela cuando quieras.",
+        "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&auto=format&fit=crop",
+        "imageAlt": "Persona iniciando una prueba digital en laptop"
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "¿Cómo funciona?",
+    "steps": [
+      {
+        "title": "1. Crea tu colegio",
+        "description": "Registra tu institución y activa la prueba gratis. En minutos ya tienes tu espacio listo.",
+        "image": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&auto=format&fit=crop",
+        "imageAlt": "Creación de una institución educativa digital"
+      },
+      {
+        "title": "2. Configura planes y cursos",
+        "description": "Define grados, materias, horarios, docentes y cuotas mensuales según tu modelo escolar.",
+        "image": "https://images.unsplash.com/photo-1456513080880-7d42dddd1d94?w=600&auto=format&fit=crop",
+        "imageAlt": "Configuración de planes escolares y cursos"
+      },
+      {
+        "title": "3. Inscribe estudiantes",
+        "description": "Carga expedientes, vincula padres/tutores y abre inscripciones con control de cupos.",
+        "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&fit=crop",
+        "imageAlt": "Inscripción de estudiantes en una escuela"
+      },
+      {
+        "title": "4. Opera el día a día",
+        "description": "Gestiona asistencia, calificaciones, mensajes, cobros y reportes desde un solo panel.",
+        "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&fit=crop",
+        "imageAlt": "Operación diaria de una escuela digital"
+      }
+    ]
+  },
+  "screenshots": {
+    "title": "Capturas de pantalla",
+    "items": [
+      {
+        "src": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=900&auto=format&fit=crop",
+        "alt": "Panel principal de SoftSchools",
+        "caption": "Vista general del colegio digital"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900&auto=format&fit=crop",
+        "alt": "Planes escolares en SoftSchools",
+        "caption": "Planes, grados y materias"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&auto=format&fit=crop",
+        "alt": "Finanzas escolares en SoftSchools",
+        "caption": "Cuotas, pagos y estados de cuenta"
+      }
+    ]
+  },
+  "tutorials": {
+    "title": "Tutoriales",
+    "items": [
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Crear tu colegio y empezar la prueba",
+        "duration": "5 min"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Planes escolares, cursos e inscripciones",
+        "duration": "7 min"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Finanzas, cuotas y comprobantes",
+        "duration": "6 min"
+      }
+    ]
+  },
+  "successStories": {
+    "title": "Historias de éxito",
+    "items": [
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "business": "Academia San José",
+        "author": "Equipo administrativo",
+        "intro": "Una academia adoptó SoftSchools para unificar expedientes, cobros y horarios en un solo sistema digital.",
+        "quote": "Pasamos de hojas sueltas a un colegio digital. Inscripciones, cuotas y seguimiento de alumnos quedaron mucho más claros.",
+        "closing": "Ideal para instituciones que quieren orden administrativo sin complicar al equipo."
+      }
+    ]
+  },
+  "pricingSection": {
+    "title": "Ofertas disponibles",
+    "subtitle": "Empieza con 7 días de prueba gratis. Sin tarjeta y sin compromiso.",
+    "contactCta": "Prueba gratis"
+  },
+  "cta": {
+    "trial": "Prueba gratis por 7 días",
+    "pricing": "Ver precios",
+    "downloadLabel": "Prueba",
+    "downloadSublabel": "Gratis"
+  }
+}

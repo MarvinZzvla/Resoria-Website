@@ -1,0 +1,156 @@
+{
+  "slug": "soft-schools",
+  "seo": {
+    "title": "SoftSchools — School & Academy Management Software | Resoria",
+    "description": "Discover SoftSchools: manage schools, students, finances, school plans and courses. Free 7-day trial."
+  },
+  "heroGif": "https://media.giphy.com/media/l0MYEqEzwMWFCg8rm/giphy.gif",
+  "backLabel": "Back to products",
+  "whatIs": {
+    "title": "What is SoftSchools?",
+    "paragraphs": [
+      "SoftSchools is your digital school: a cloud system to manage schools, academies and educational institutions from one place.",
+      "It centralizes student records, school plans, courses, attendance, grades, messaging and finances so your team works with order — without scattered paperwork."
+    ]
+  },
+  "whoIsItFor": {
+    "title": "Who is it for?",
+    "headlinePrefix": "System for your",
+    "typewriterWords": ["School", "Academy", "Institute", "Learning center", "Kindergarten", "College", "Training center"],
+    "subtitle": "If you manage students, teachers, payments and schedules, SoftSchools is built for your institution."
+  },
+  "benefits": {
+    "title": "How can it benefit you?",
+    "items": [
+      {
+        "title": "Digital school ready in minutes",
+        "description": "Create your institution, invite your team and start operating without complicated setup.",
+        "image": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&auto=format&fit=crop",
+        "imageAlt": "Modern classroom ready for digital management"
+      },
+      {
+        "title": "Clear records and directory",
+        "description": "Manage students, parents/guardians and staff with centralized, easy-to-search information.",
+        "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&auto=format&fit=crop",
+        "imageAlt": "Students and education team working together"
+      },
+      {
+        "title": "School plans and courses",
+        "description": "Organize grades, subjects, weekly schedules, capacity and enrollments with automatic billing.",
+        "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&auto=format&fit=crop",
+        "imageAlt": "Academic planning with books and schedules"
+      },
+      {
+        "title": "Finance and cash in one place",
+        "description": "Track fees, tuition, statements and payment receipts without spreadsheets.",
+        "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&auto=format&fit=crop",
+        "imageAlt": "School finance and payment control"
+      },
+      {
+        "title": "Attendance and grades",
+        "description": "Log attendance, assignments and grades to track every student's progress.",
+        "image": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&auto=format&fit=crop",
+        "imageAlt": "Teacher reviewing attendance and student progress"
+      },
+      {
+        "title": "Try with no commitment",
+        "description": "Start a free 7-day trial with no card required. Cancel anytime.",
+        "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&auto=format&fit=crop",
+        "imageAlt": "Person starting a digital trial on a laptop"
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "How does it work?",
+    "steps": [
+      {
+        "title": "1. Create your school",
+        "description": "Register your institution and activate the free trial. In minutes your workspace is ready.",
+        "image": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&auto=format&fit=crop",
+        "imageAlt": "Creating a digital educational institution"
+      },
+      {
+        "title": "2. Set up plans and courses",
+        "description": "Define grades, subjects, schedules, teachers and monthly fees for your school model.",
+        "image": "https://images.unsplash.com/photo-1456513080880-7d42dddd1d94?w=600&auto=format&fit=crop",
+        "imageAlt": "Configuring school plans and courses"
+      },
+      {
+        "title": "3. Enroll students",
+        "description": "Load records, link parents/guardians and open enrollments with capacity control.",
+        "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&fit=crop",
+        "imageAlt": "Enrolling students at a school"
+      },
+      {
+        "title": "4. Run day-to-day operations",
+        "description": "Manage attendance, grades, messages, payments and reports from one dashboard.",
+        "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&fit=crop",
+        "imageAlt": "Daily operations of a digital school"
+      }
+    ]
+  },
+  "screenshots": {
+    "title": "Screenshots",
+    "items": [
+      {
+        "src": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=900&auto=format&fit=crop",
+        "alt": "SoftSchools main dashboard",
+        "caption": "Digital school overview"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900&auto=format&fit=crop",
+        "alt": "School plans in SoftSchools",
+        "caption": "Plans, grades and subjects"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&auto=format&fit=crop",
+        "alt": "School finances in SoftSchools",
+        "caption": "Fees, payments and statements"
+      }
+    ]
+  },
+  "tutorials": {
+    "title": "Tutorials",
+    "items": [
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Create your school and start the trial",
+        "duration": "5 min"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "School plans, courses and enrollments",
+        "duration": "7 min"
+      },
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Finance, fees and receipts",
+        "duration": "6 min"
+      }
+    ]
+  },
+  "successStories": {
+    "title": "Success stories",
+    "items": [
+      {
+        "videoId": "dQw4w9WgXcQ",
+        "business": "San José Academy",
+        "author": "Administrative team",
+        "intro": "An academy adopted SoftSchools to unify records, billing and schedules in one digital system.",
+        "quote": "We moved from scattered sheets to a digital school. Enrollments, fees and student follow-up became much clearer.",
+        "closing": "Ideal for institutions that want administrative order without overloading the team."
+      }
+    ]
+  },
+  "pricingSection": {
+    "title": "Available plans",
+    "subtitle": "Start with a free 7-day trial. No card and no commitment.",
+    "contactCta": "Free trial"
+  },
+  "cta": {
+    "trial": "Free 7-day trial",
+    "pricing": "View pricing",
+    "downloadLabel": "Free",
+    "downloadSublabel": "Trial"
+  }
+}

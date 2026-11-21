@@ -9,32 +9,204 @@ interface Props {
 const { content } = Astro.props;
 const { successSection } = content;
 const playLabel = content.locale === 'en' ? 'Play video' : 'Reproducir video';
+const prevLabel = content.locale === 'en' ? 'Previous stories' : 'Casos anteriores';
+const nextLabel = content.locale === 'en' ? 'Next stories' : 'Casos siguientes';
+const track = [...successSection.stories, ...successSection.stories];
 ---
 
-<section id={successSection.id} class="pt-0 pb-12 md:pb-14" aria-labelledby="success-heading">
+<section id={successSection.id} class="success-carousel-section pt-0 pb-12 md:pb-14" aria-labelledby="success-heading">
   <div class="mx-auto w-[min(1120px,92vw)]">
     <header class="mb-10 text-center" data-animate>
       <h2 id="success-heading" class="mb-3 text-3xl font-bold md:text-4xl">{successSection.title}</h2>
       <p class="mx-auto max-w-xl text-resoria-muted">{successSection.subtitle}</p>
     </header>
+  </div>
 
-    <div class="mx-auto grid max-w-6xl gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-3">
-      {successSection.stories.map((story, index) => (
-        <article
-          class="flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-resoria-card shadow-xl shadow-black/25 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-2xl hover:shadow-black/35"
-          data-animate
-          style={`--delay: ${index * 0.1}s`}
-        >
-          <YouTubeEmbed videoId={story.videoId} title={story.title} playLabel={playLabel} aspect="square" />
-          <div class="flex flex-1 flex-col p-5 pt-4 text-center sm:p-6">
-            <h3 class="mb-3 text-xl font-semibold">{story.title}</h3>
-            <blockquote cite={`#story-${index}`} class="mb-4 flex-1">
-              <p class="text-sm leading-relaxed text-resoria-muted italic sm:text-base">&ldquo;{story.quote}&rdquo;</p>
-            </blockquote>
-            <cite class="text-sm text-resoria-silver not-italic">&mdash; {story.author}</cite>
-          </div>
-        </article>
-      ))}
+  <div class="success-carousel" data-animate data-success-carousel aria-label={successSection.title}>
+    <button
+      type="button"
+      class="success-carousel__nav success-carousel__nav--prev"
+      data-success-prev
+      aria-label={prevLabel}
+    >
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M15 6 9 12l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </button>
+
+    <div class="success-carousel__viewport">
+      <div class="success-carousel__fade success-carousel__fade--left" aria-hidden="true"></div>
+      <div class="success-carousel__fade success-carousel__fade--right" aria-hidden="true"></div>
+      <div class="success-carousel__track" data-success-track>
+        {track.map((story, index) => (
+          <article
+            class="success-carousel__card"
+            aria-hidden={index >= successSection.stories.length ? 'true' : undefined}
+          >
+            <YouTubeEmbed
+              videoId={story.videoId}
+              title={index < successSection.stories.length ? story.title : ''}
+              playLabel={playLabel}
+              aspect="square"
+            />
+            <div class="flex flex-1 flex-col p-5 pt-4 text-center sm:p-6">
+              <h3 class="mb-3 text-xl font-semibold">{story.title}</h3>
+              <blockquote class="mb-4 flex-1">
+                <p class="text-sm leading-relaxed text-resoria-muted italic sm:text-base">&ldquo;{story.quote}&rdquo;</p>
+              </blockquote>
+              <cite class="text-sm text-resoria-silver not-italic">&mdash; {story.author}</cite>
+            </div>
+          </article>
+        ))}
+      </div>
     </div>
+
+    <button
+      type="button"
+      class="success-carousel__nav success-carousel__nav--next"
+      data-success-next
+      aria-label={nextLabel}
+    >
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </button>
   </div>
 </section>
+
+<style>
+  .success-carousel {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 0.5rem;
+    width: min(1200px, 100%);
+    margin-inline: auto;
+    padding-inline: clamp(0.25rem, 2vw, 1rem);
+  }
+
+  .success-carousel__viewport {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .success-carousel__track {
+    display: flex;
+    width: max-content;
+    gap: 1.25rem;
+    padding: 0.5rem 0.75rem 1rem;
+    will-change: transform;
+  }
+
+  .success-carousel__card {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: min(20rem, 78vw);
+    overflow: hidden;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--color-resoria-card);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.28);
+    transition:
+      border-color 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+
+  .success-carousel__card:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+  }
+
+  .success-carousel__fade {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 3.5rem;
+  }
+
+  .success-carousel__fade--left {
+    left: 0;
+    background: linear-gradient(to right, var(--color-resoria-bg), transparent);
+  }
+
+  .success-carousel__fade--right {
+    right: 0;
+    background: linear-gradient(to left, var(--color-resoria-bg), transparent);
+  }
+
+  .success-carousel__nav {
+    z-index: 2;
+    display: inline-flex;
+    height: 2.75rem;
+    width: 2.75rem;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(18, 18, 26, 0.9);
+    color: #f0f0f5;
+    cursor: pointer;
+    transition:
+      background 0.2s ease,
+      border-color 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .success-carousel__nav:hover {
+    border-color: rgba(0, 168, 255, 0.55);
+    background: rgba(0, 168, 255, 0.15);
+    transform: scale(1.04);
+  }
+
+  .success-carousel__nav svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  @media (max-width: 640px) {
+    .success-carousel {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+
+    .success-carousel__nav {
+      position: absolute;
+      top: 38%;
+      translate: 0 -50%;
+    }
+
+    .success-carousel__nav--prev {
+      left: 0.35rem;
+    }
+
+    .success-carousel__nav--next {
+      right: 0.35rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .success-carousel__track {
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      transform: none !important;
+    }
+
+    .success-carousel__card[aria-hidden='true'] {
+      display: none;
+    }
+
+    .success-carousel__nav {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  import '../scripts/success-carousel.ts';
+</script>
