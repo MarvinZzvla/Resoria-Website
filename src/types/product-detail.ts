@@ -59,6 +59,11 @@ export interface ProductDetail {
     title: string;
     steps: ProductDetailStep[];
   };
+  preview?: {
+    title: string;
+    videoId: string;
+    videoTitle: string;
+  };
   screenshots: {
     title: string;
     items: ProductDetailScreenshot[];

@@ -40,18 +40,6 @@
       "downloadUrl": "#",
       "plans": [
         {
-          "id": "lifetime",
-          "name": "Pago único",
-          "price": "$500",
-          "period": "USD",
-          "features": [
-            "Instalación en tu equipo",
-            "Sin límite de usuarios",
-            "Actualizaciones incluidas 1 año",
-            "Soporte por correo"
-          ]
-        },
-        {
           "id": "saas",
           "name": "Pago mensual",
           "price": "$35",
@@ -62,6 +50,32 @@
             "Actualizaciones automáticas",
             "Copias de seguridad en la nube",
             "Soporte prioritario"
+          ]
+        },
+        {
+          "id": "lifetime",
+          "name": "Pago único (solo el sistema)",
+          "price": "$600",
+          "period": "USD",
+          "features": [
+            "Solo el sistema, sin equipos",
+            "Instalación en tu equipo",
+            "Sin límite de usuarios",
+            "Actualizaciones incluidas 1 año",
+            "Soporte por correo"
+          ]
+        },
+        {
+          "id": "lifetime-equipment",
+          "name": "Pago único con equipos",
+          "price": "$1,200",
+          "period": "USD",
+          "features": [
+            "Sistema incluido",
+            "Computadora completa",
+            "Cajón de dinero",
+            "2 impresoras térmicas",
+            "Una tablet"
           ]
         }
       ]
@@ -77,18 +91,6 @@
       "downloadUrl": "#",
       "plans": [
         {
-          "id": "lifetime",
-          "name": "Pago único",
-          "price": "$300",
-          "period": "USD",
-          "features": [
-            "Instalación en tu equipo",
-            "Productos ilimitados",
-            "Reportes de inventario",
-            "Soporte por correo"
-          ]
-        },
-        {
           "id": "saas",
           "name": "Pago mensual",
           "price": "$20",
@@ -99,6 +101,32 @@
             "Sincronización en tiempo real",
             "Alertas automáticas de stock",
             "Soporte prioritario"
+          ]
+        },
+        {
+          "id": "lifetime",
+          "name": "Pago único (solo el sistema)",
+          "price": "$450",
+          "period": "USD",
+          "features": [
+            "Solo el sistema, sin equipos",
+            "Instalación en tu equipo",
+            "Productos ilimitados",
+            "Reportes de inventario",
+            "Soporte por correo"
+          ]
+        },
+        {
+          "id": "lifetime-equipment",
+          "name": "Pago único con equipos",
+          "price": "$840",
+          "period": "USD",
+          "features": [
+            "Sistema incluido",
+            "Computadora completa",
+            "1 impresora térmica",
+            "Cajón de dinero",
+            "Lector de código de barras"
           ]
         }
       ]

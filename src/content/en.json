@@ -40,18 +40,6 @@
       "downloadUrl": "#",
       "plans": [
         {
-          "id": "lifetime",
-          "name": "One-time payment",
-          "price": "$500",
-          "period": "USD",
-          "features": [
-            "Install on your own device",
-            "Unlimited users",
-            "Updates included for 1 year",
-            "Email support"
-          ]
-        },
-        {
           "id": "saas",
           "name": "Monthly payment",
           "price": "$35",
@@ -62,6 +50,32 @@
             "Automatic updates",
             "Cloud backups",
             "Priority support"
+          ]
+        },
+        {
+          "id": "lifetime",
+          "name": "One-time payment (system only)",
+          "price": "$600",
+          "period": "USD",
+          "features": [
+            "System only, no equipment",
+            "Install on your own device",
+            "Unlimited users",
+            "Updates included for 1 year",
+            "Email support"
+          ]
+        },
+        {
+          "id": "lifetime-equipment",
+          "name": "One-time payment with equipment",
+          "price": "$1,200",
+          "period": "USD",
+          "features": [
+            "System included",
+            "Complete computer",
+            "Cash drawer",
+            "2 thermal printers",
+            "One tablet"
           ]
         }
       ]
@@ -77,18 +91,6 @@
       "downloadUrl": "#",
       "plans": [
         {
-          "id": "lifetime",
-          "name": "One-time payment",
-          "price": "$300",
-          "period": "USD",
-          "features": [
-            "Install on your own device",
-            "Unlimited products",
-            "Inventory reports",
-            "Email support"
-          ]
-        },
-        {
           "id": "saas",
           "name": "Monthly payment",
           "price": "$20",
@@ -99,6 +101,32 @@
             "Real-time sync",
             "Automatic stock alerts",
             "Priority support"
+          ]
+        },
+        {
+          "id": "lifetime",
+          "name": "One-time payment (system only)",
+          "price": "$450",
+          "period": "USD",
+          "features": [
+            "System only, no equipment",
+            "Install on your own device",
+            "Unlimited products",
+            "Inventory reports",
+            "Email support"
+          ]
+        },
+        {
+          "id": "lifetime-equipment",
+          "name": "One-time payment with equipment",
+          "price": "$840",
+          "period": "USD",
+          "features": [
+            "System included",
+            "Complete computer",
+            "1 thermal printer",
+            "Cash drawer",
+            "Barcode reader"
           ]
         }
       ]

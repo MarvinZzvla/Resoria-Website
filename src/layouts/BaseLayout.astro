@@ -48,7 +48,7 @@ const softwareSchemas = content.products.map((product) => ({
   offers: product.plans.map((plan) => ({
     '@type': 'Offer',
     name: plan.name,
-    price: plan.price.replace('$', ''),
+    price: plan.price.replace(/[$,]/g, ''),
     priceCurrency: 'USD',
     description: plan.features.join('. '),
     url: absoluteUrl(sitePath(`${content.locale}/#${content.contactSection.id}`), siteUrl),

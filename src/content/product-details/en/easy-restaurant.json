@@ -89,6 +89,11 @@
       }
     ]
   },
+  "preview": {
+    "title": "Take a look",
+    "videoId": "BhGQILKiVBk",
+    "videoTitle": "A look at Easy Restaurant"
+  },
   "screenshots": {
     "title": "Screenshots",
     "items": [
@@ -113,19 +118,24 @@
     "title": "Tutorials",
     "items": [
       {
-        "videoId": "dQw4w9WgXcQ",
-        "title": "Getting started with Easy Restaurant",
-        "duration": "5 min"
+        "videoId": "57foWUKSKUE",
+        "title": "Open a table",
+        "duration": "1:28"
       },
       {
-        "videoId": "dQw4w9WgXcQ",
-        "title": "Setting up tables and zones",
-        "duration": "8 min"
+        "videoId": "jON-CdtwI2g",
+        "title": "Move a table, orders and join tables",
+        "duration": "1:59"
       },
       {
-        "videoId": "dQw4w9WgXcQ",
-        "title": "Cash register close and reports",
-        "duration": "6 min"
+        "videoId": "F4f3WzhUpqw",
+        "title": "Open the register and record expenses",
+        "duration": "1:29"
+      },
+      {
+        "videoId": "rtCLcSgcEwA",
+        "title": "Coupons and redeeming coupons",
+        "duration": "1:59"
       }
     ]
   },

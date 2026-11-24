@@ -89,6 +89,11 @@
       }
     ]
   },
+  "preview": {
+    "title": "Echa un vistazo",
+    "videoId": "BhGQILKiVBk",
+    "videoTitle": "Un vistazo a Easy Restaurant"
+  },
   "screenshots": {
     "title": "Capturas de pantalla",
     "items": [
@@ -113,19 +118,24 @@
     "title": "Tutoriales",
     "items": [
       {
-        "videoId": "dQw4w9WgXcQ",
-        "title": "Primeros pasos con Easy Restaurant",
-        "duration": "5 min"
+        "videoId": "57foWUKSKUE",
+        "title": "Levantar una mesa",
+        "duration": "1:28"
       },
       {
-        "videoId": "dQw4w9WgXcQ",
-        "title": "Configurar mesas y zonas",
-        "duration": "8 min"
+        "videoId": "jON-CdtwI2g",
+        "title": "Mover mesa, pedidos y juntar mesas",
+        "duration": "1:59"
       },
       {
-        "videoId": "dQw4w9WgXcQ",
-        "title": "Cierre de caja y reportes",
-        "duration": "6 min"
+        "videoId": "F4f3WzhUpqw",
+        "title": "Apertura de caja y registro de gastos",
+        "duration": "1:29"
+      },
+      {
+        "videoId": "rtCLcSgcEwA",
+        "title": "Cupones y canjear cupones",
+        "duration": "1:59"
       }
     ]
   },
