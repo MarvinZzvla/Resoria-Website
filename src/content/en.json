@@ -342,6 +342,12 @@
         "name": "OfeMarket",
         "logo": "/images/allies/ofemarket.png?v=2",
         "logoAlt": "OfeMarket logo"
+      },
+      {
+        "id": "radio-oxigeno",
+        "name": "Radio Oxígeno 94.5 FM",
+        "logo": "/images/allies/radio-oxigeno.png?v=1",
+        "logoAlt": "Radio Oxígeno 94.5 FM logo"
       }
     ]
   },

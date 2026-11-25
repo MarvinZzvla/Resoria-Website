@@ -13,6 +13,7 @@ mapping = {
     "Gemini_Generated_Image_j0y368j0y368j0y3-a95645ef-e27c-4308-8c78-371b770e1edb.jpg": "flor-de-pochote.png",
     "Gemini_Generated_Image_jpqumqjpqumqjpqu-f550806a-5abc-4f46-a5c0-208e0ff8acb7.jpg": "barber-benthi.png",
     "Gemini_Generated_Image_ua9yidua9yidua9y-7e67ae4a-a805-4b6d-a911-d70be2f14e0b.jpg": "ofemarket.png",
+    "Gemini_Generated_Image_rfsfwprfsfwprfsf-ebce2cd3-ff6f-4d69-b8f6-b3126c41f4d0.jpg": "radio-oxigeno.png",
 }
 
 BG_CUTOFF = 95
